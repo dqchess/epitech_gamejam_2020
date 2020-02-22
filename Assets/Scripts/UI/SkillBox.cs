@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class SkillBox : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class SkillBox : MonoBehaviour
     public GameObject skillPointPrefab;
     int currentLevel;
     List<Color> colors = new List<Color>();
+
+    public List<UnityEvent> upgradeEvents = new List<UnityEvent>();
     void Start()
     {
         colors.Add(new Color(0, 0, 255));
@@ -39,11 +42,12 @@ public class SkillBox : MonoBehaviour
     public void UpdateSkillLevel()
     {
         if (skill.maxLevel > currentLevel)
-
         {
             currentLevel += 1;
             skill.currentLevel = currentLevel;
             skill.SkillUpgraded(currentLevel);
+            if (upgradeEvents[currentLevel - 1] != null)
+                upgradeEvents[currentLevel - 1].Invoke();
             Debug.Log(skill.skillName + " upgraded to level " + currentLevel + " !");
         } else
         {
