@@ -6,13 +6,13 @@ using UnityEngine;
 
 public class InteractionZone : MonoBehaviour
 {
-    public virtual void activate(Attacker attacker) {
+    public virtual void activate(AttackerStats attacker) {
 
     }
 
-    public virtual void deactivate(Attacker attacker) {
+    public virtual void deactivate(AttackerStats attacker) {
     }
-    public virtual void updateZone(Attacker attacker) {
+    public virtual void updateZone(AttackerStats attacker) {
     }
 
 }

@@ -21,7 +21,8 @@ public class AttackerStats : MonoBehaviour
 
     #endregion
 
-    public int crystals = 0;
+    public float crystals = 0;
     public int health = 100;
     public int damage = 100;
+    public float miningValue = 10;
 }
