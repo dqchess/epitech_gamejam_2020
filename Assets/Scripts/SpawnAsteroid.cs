@@ -14,9 +14,29 @@ public class SpawnAsteroid : MonoBehaviour
     private float posX;
     private float posY;
 
+    private float up;
+    private float down;
+    private float left;
+    private float right;
+
+
     // Use this for initialization
     void Start()
     {
+
+        Vector3 upLeft = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height, 0));
+        Vector3 downLeft = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));
+        Vector3 downRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0));
+
+
+        Debug.Log("upLeft >- " + upLeft);
+        Debug.Log("downLeft >- " + downLeft);
+        Debug.Log("downRight >- " + downRight);
+        up = upLeft.y;
+        down = downRight.y;
+        left = downLeft.x;
+        right = downRight.x;
+
         StartCoroutine(asteroidWave());
 
         UpDown = Random.Range(-1, 1);
@@ -29,19 +49,19 @@ public class SpawnAsteroid : MonoBehaviour
         GameObject a = Instantiate(asteroidPrefab) as GameObject;
         if (UpDown >= 0)
         {
-            posY = Random.Range(-12, -9);
+            posY = Random.Range(down - 5, down);
         }
         else
         {
-            posY = Random.Range(9, 12);
+            posY = Random.Range(up, up + 5);
         }
         if (RightLeft >= 0)
         {
-            posX = Random.Range(-20, -15);
+            posX = Random.Range(left - 5, left);
         }
         else
         {
-            posX = Random.Range(15, 20);
+            posX = Random.Range(right, right + 5);
 
         }
 
