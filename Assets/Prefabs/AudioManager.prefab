@@ -51,7 +51,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: laserShot
     clip: {fileID: 8300000, guid: 10dd6f147052c5f4d99e975a91437b9b, type: 3}
-    volume: 0.27
+    volume: 0.07
     pitch: 1.26
     source: {fileID: 0}
   - name: ship_rocket_part1
