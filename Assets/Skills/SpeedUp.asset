@@ -20,3 +20,4 @@ MonoBehaviour:
   input: 50
   inputName: 2
   currentLevel: 2
+  upgradeEvents: []
