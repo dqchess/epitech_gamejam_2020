@@ -17,5 +17,6 @@ MonoBehaviour:
   maxLevel: 2
   price: 
   hasInput: 1
-  input: 258
+  input: 50
   inputName: 2
+  currentLevel: 2
