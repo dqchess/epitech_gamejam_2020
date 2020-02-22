@@ -14,18 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: AttackUp
   icon: {fileID: -4841198759364821401, guid: 1314bda8c95e23c409bb8be32c983ed6, type: 3}
-  maxLevel: 4
+  maxLevel: 15
+  levelThreshold: 5
   price: 
   hasInput: 1
   input: 49
   inputName: 1
-  currentLevel: 4
-  upgradeEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-  - m_PersistentCalls:
-      m_Calls: []
-  - m_PersistentCalls:
-      m_Calls: []
-  - m_PersistentCalls:
-      m_Calls: []
+  currentLevel: 15
