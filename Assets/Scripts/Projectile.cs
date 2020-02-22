@@ -5,6 +5,7 @@ public class Projectile : MonoBehaviour {
 	public GameObject shoot_effect;
 	public GameObject hit_effect;
 	public GameObject firing_ship;
+	public float damage;
 	
 	// Use this for initialization
 	void Start () {

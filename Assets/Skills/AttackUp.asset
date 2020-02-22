@@ -20,3 +20,12 @@ MonoBehaviour:
   input: 49
   inputName: 1
   currentLevel: 4
+  upgradeEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+  - m_PersistentCalls:
+      m_Calls: []
+  - m_PersistentCalls:
+      m_Calls: []
+  - m_PersistentCalls:
+      m_Calls: []
