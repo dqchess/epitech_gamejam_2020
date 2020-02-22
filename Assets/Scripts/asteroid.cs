@@ -14,7 +14,7 @@ public class asteroid : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        if (transform.position.x >= 20)
+        if (transform.position.x >= 16)
         {
 
             dirX = Random.Range(-0.5f, 0.0f);
@@ -23,7 +23,7 @@ public class asteroid : MonoBehaviour
         {
             dirX = Random.Range(0.0f, 0.5f);
         }
-        if (transform.position.y >= 12)
+        if (transform.position.y >= 9)
         {
             dirY = Random.Range(-0.5f, 0.0f);
         }
@@ -39,11 +39,11 @@ public class asteroid : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x < -30 || transform.position.x > 30)
+        if (transform.position.x < -21 || transform.position.x > 21)
         {
             Destroy(this.gameObject);
         }
-        if (transform.position.y < -30 || transform.position.y > 30)
+        if (transform.position.y < -13 || transform.position.y > 13)
         {
             Destroy(this.gameObject);
         }

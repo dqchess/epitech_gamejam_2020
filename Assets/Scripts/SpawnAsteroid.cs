@@ -29,19 +29,19 @@ public class SpawnAsteroid : MonoBehaviour
         GameObject a = Instantiate(asteroidPrefab) as GameObject;
         if (UpDown >= 0)
         {
-            posY = Random.Range(-20, -12);
+            posY = Random.Range(-12, -9);
         }
         else
         {
-            posY = Random.Range(12, 20);
+            posY = Random.Range(9, 12);
         }
         if (RightLeft >= 0)
         {
-            posX = Random.Range(-25, -20);
+            posX = Random.Range(-20, -15);
         }
         else
         {
-            posX = Random.Range(20, 25);
+            posX = Random.Range(15, 20);
 
         }
 
