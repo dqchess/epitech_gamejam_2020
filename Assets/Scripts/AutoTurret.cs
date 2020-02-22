@@ -15,7 +15,7 @@ public class AutoTurret : MonoBehaviour
     public bool hasTarget;
 	public GameObject parent;
     public int nbShots = 1;
-    public float damage;
+    public int damage;
 	// Use this for initialization
 	void Start () {
 		nextFire = fireRate;

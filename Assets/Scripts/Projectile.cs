@@ -5,7 +5,7 @@ public class Projectile : MonoBehaviour {
 	public GameObject shoot_effect;
 	public GameObject hit_effect;
 	public GameObject firing_ship;
-	public float damage;
+	public int damage = 5;
 	
 	// Use this for initialization
 	void Start () {
@@ -23,9 +23,13 @@ public class Projectile : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col) {
 
 		if (col.gameObject != firing_ship && col.gameObject.tag != "Projectile" && col.gameObject.layer == 8) {
-			Debug.Log(firing_ship.name);
+			Debug.Log(col.gameObject.name);
 			Instantiate(hit_effect, transform.position, Quaternion.identity);
 			Destroy(gameObject);
+			if (col.gameObject.GetComponent<DamageableObj>()) {
+				Debug.Log("faefaefzfzaazf");
+				col.gameObject.GetComponent<DamageableObj>().takeDamage(damage);
+			}
 		}
 	}
 	

@@ -8,7 +8,6 @@ public class asteroid : MonoBehaviour
     private float dirX = 1.0f;
     private float dirY = 0.0f;
     private Rigidbody2D rb;
-    private int life = 3;
     private Vector2 screenBounds;
 
 
@@ -40,10 +39,7 @@ public class asteroid : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (life <= 3)
-        {
-            Destroy(this.gameObject);
-        }
+   
         if (transform.position.x < -21 || transform.position.x > 21)
         {
             Destroy(this.gameObject);
@@ -55,13 +51,8 @@ public class asteroid : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D other)
     {
-        FindObjectOfType<SoundManagers>().Play("Impact_Asteroid");
-        Debug.Log("impact -> " + other.gameObject.tag);
-    }
+        // FindObjectOfType<SoundManagers>().Play("Impact_Asteroid");
 
-    void takeDamage(int damage)
-    {
-        life -= damage;
     }
 
 }
