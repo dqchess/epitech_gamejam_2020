@@ -224,7 +224,7 @@ MonoBehaviour:
   - {fileID: 2240295080128779853, guid: 9d37b444378b6cc47b536cd24d4af2bf, type: 3}
   - {fileID: 6078718635339298991, guid: 79c6e38370fb34a439e13b075445fdb0, type: 3}
   - {fileID: 5286673862583414714, guid: 5f3b7210369459945a228a9a9a469466, type: 3}
-  respawnTime: 1
+  respawnTime: 5
 --- !u!114 &682626299
 MonoBehaviour:
   m_ObjectHideFlags: 0
