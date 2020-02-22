@@ -459,6 +459,26 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 370886464}
+    - target: {fileID: 155839947889213962, guid: 462417a258984034ab4488b8ed8f4dfe,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 155839947889213962, guid: 462417a258984034ab4488b8ed8f4dfe,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 155839947889213962, guid: 462417a258984034ab4488b8ed8f4dfe,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 155839947889213967, guid: 462417a258984034ab4488b8ed8f4dfe,
+        type: 3}
+      propertyPath: rotation_speed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 210113531402270674, guid: 462417a258984034ab4488b8ed8f4dfe,
         type: 3}
       propertyPath: m_Name
@@ -1049,7 +1069,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turrets:
+  - {fileID: 5636610997964652756, guid: 4454dd0b36377f74d935227061e88456, type: 3}
   - {fileID: 4951315340440239509, guid: 9c3f385ed2f36454aa0fdbe88c2794e5, type: 3}
+  - {fileID: 8423796697813448554, guid: 5471380984994874fadf3b7f70682f31, type: 3}
+  - {fileID: 3972580879132432931, guid: 9332dd0862a35a74f9fe43b2a22447a0, type: 3}
+  - {fileID: 756085353740750109, guid: 8c2e0ac464f30064a8af484c6c262603, type: 3}
   actualTurret: {fileID: 0}
 --- !u!4 &1246280601
 Transform:
