@@ -39,6 +39,7 @@ public class SkillBox : MonoBehaviour
         {
             currentLevel += 1;
             skill.currentLevel = currentLevel;
+            skill.SkillUpgraded(currentLevel);
             Debug.Log(skill.skillName + " upgraded to level " + currentLevel + " !");
         } else
         {
