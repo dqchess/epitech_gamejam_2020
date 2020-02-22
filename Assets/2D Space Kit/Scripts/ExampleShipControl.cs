@@ -3,6 +3,7 @@ using System.Collections;
 
 public class ExampleShipControl : MonoBehaviour {
 
+	public bool slideAttaque = false;
 	public float acceleration_amount = 1f;
 	public float rotation_speed = 1f;
 	public GameObject turret;
@@ -29,14 +30,15 @@ public class ExampleShipControl : MonoBehaviour {
 		// 	GetComponent<Rigidbody2D>().AddForce((-transform.up) * acceleration_amount * Time.deltaTime);
 			
 		// }
-		
-		if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.Q)) {//slide left
-			GetComponent<Rigidbody2D>().AddForce((-transform.right) * acceleration_amount * 0.6f  * Time.deltaTime);
-			//print ("strafeing");
-		}
-		if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D)) {//slide right
-			GetComponent<Rigidbody2D>().AddForce((transform.right) * acceleration_amount * 0.6f  * Time.deltaTime);
-			
+		if (slideAttaque == true) {
+			if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.Q)) {//slide left
+				GetComponent<Rigidbody2D>().AddForce((-transform.right) * acceleration_amount * 0.6f  * Time.deltaTime);
+				//print ("strafeing");
+			}
+			if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D)) {//slide right
+				GetComponent<Rigidbody2D>().AddForce((transform.right) * acceleration_amount * 0.6f  * Time.deltaTime);
+				
+			}
 		}
 		
 		if (!Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D)) {//turn right
