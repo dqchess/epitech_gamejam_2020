@@ -8,6 +8,7 @@ public class scanCollide : MonoBehaviour
     // Start is called before the first frame update
     Seeker seeker;
     AIDestinationSetter target;
+    DamagableObj salut;
     public Collider2D colliding;
     void Start()
     {
