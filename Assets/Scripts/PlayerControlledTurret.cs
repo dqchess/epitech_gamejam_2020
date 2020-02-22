@@ -37,5 +37,9 @@ public class PlayerControlledTurret : MonoBehaviour {
 		}
 		if (nextFire < fireRate)
 			nextFire += Time.deltaTime;
+
+
 	}
+
+
 }
