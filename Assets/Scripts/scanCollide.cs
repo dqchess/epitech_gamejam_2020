@@ -20,8 +20,7 @@ public class scanCollide : MonoBehaviour
     /// </summary>
     void Update()
     {
-        AstarPath.active.UpdateGraphs(colliding.bounds);
-
+            AstarPath.active.UpdateGraphs(colliding.bounds);
     }
 
     // Update is called once per frame

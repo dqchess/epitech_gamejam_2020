@@ -4821,6 +4821,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  damage: 0
   parent: {fileID: 155839947889213965}
 --- !u!1 &155839947235003584
 GameObject:
@@ -6098,6 +6099,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  damage: 0
   parent: {fileID: 210113532149758413}
 --- !u!1 &210113530549873382
 GameObject:
@@ -6356,6 +6358,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  damage: 0
   parent: {fileID: 155839947889213965}
 --- !u!1 &210113530709411271
 GameObject:
@@ -11608,6 +11611,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  damage: 0
   parent: {fileID: 210113532149758413}
 --- !u!1 &210113531402270674
 GameObject:
@@ -11975,6 +11979,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  damage: 0
   parent: {fileID: 155839947889213965}
 --- !u!1 &210113531672497149
 GameObject:
@@ -12081,6 +12086,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  damage: 0
   parent: {fileID: 155839947889213965}
 --- !u!1 &210113531675818412
 GameObject:
@@ -12508,6 +12514,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  damage: 0
   parent: {fileID: 210113532149758413}
 --- !u!1 &210113531840095295
 GameObject:
@@ -12705,6 +12712,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  damage: 0
   parent: {fileID: 210113532149758413}
 --- !u!1 &210113532015822307
 GameObject:
@@ -13144,6 +13152,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  damage: 0
   parent: {fileID: 210113532149758413}
 --- !u!1 &210113532149758413
 GameObject:
@@ -13752,4 +13761,5 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  damage: 0
   parent: {fileID: 155839947889213965}

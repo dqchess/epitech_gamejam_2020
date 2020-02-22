@@ -50,7 +50,7 @@ public class asteroid : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D other)
     {
-        FindObjectOfType<SoundManagers>().Play("Impact_Asteroid");
+        // FindObjectOfType<SoundManagers>().Play("Impact_Asteroid");
         Debug.Log("impact");
     }
 
