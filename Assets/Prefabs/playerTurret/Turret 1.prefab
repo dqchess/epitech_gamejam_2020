@@ -257,6 +257,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  damage: 10
   parent: {fileID: 0}
 --- !u!1 &206329059126259857
 GameObject:
