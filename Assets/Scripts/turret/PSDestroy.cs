@@ -7,7 +7,6 @@ public class PSDestroy : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Debug.Log("Explosion !!");
         Destroy(gameObject, GetComponent<ParticleSystem>().main.duration);
 
     }

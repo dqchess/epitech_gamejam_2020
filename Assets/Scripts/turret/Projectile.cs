@@ -31,6 +31,7 @@ public class Projectile : MonoBehaviour
             if (gameObject.tag != "Laser")
             {
                 Destroy(gameObject);
+                FindObjectOfType<SoundManagers>().Play("tower_shot_explosion");
                 Instantiate(hit_effect, transform.position, Quaternion.identity);
             }
             else
