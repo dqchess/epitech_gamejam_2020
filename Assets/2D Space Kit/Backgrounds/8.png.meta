@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 6353384fe04923e42ab15bd2b0bf3cb5
+=======
+guid: 952460cb4ffa4934188d947ab1865567
+>>>>>>> origin/antoine
 labels:
 - Space
 TextureImporter:
