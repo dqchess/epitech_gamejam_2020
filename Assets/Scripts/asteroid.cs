@@ -24,9 +24,6 @@ public class asteroid : MonoBehaviour
         Vector3 downRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0));
 
 
-        Debug.Log("upLeft >- " + upLeft);
-        Debug.Log("downLeft >- " + downLeft);
-        Debug.Log("downRight >- " + downRight);
         up = upLeft.y;
         down = downRight.y;
         left = downLeft.x;
@@ -68,7 +65,7 @@ public class asteroid : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D other)
     {
-        // FindObjectOfType<SoundManagers>().Play("Impact_Asteroid");
+        FindObjectOfType<SoundManagers>().Play("Impact_Asteroid");
 
     }
 
