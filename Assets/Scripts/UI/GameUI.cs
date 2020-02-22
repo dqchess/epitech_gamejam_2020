@@ -51,9 +51,10 @@ public class GameUI : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        foreach (SkillBox attackBox in attackSkillBoxes)
         {
-            attackSkillBoxes[0].skill.Upgrade();
+            if (Input.GetKeyDown(attackBox.skill.input))
+                attackBox.skill.Upgrade();
         }
     }
 

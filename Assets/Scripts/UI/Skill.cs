@@ -12,7 +12,7 @@ public class Skill : ScriptableObject
     public bool hasInput;
     public KeyCode input;
     public string inputName;
-    private int currentLevel = 0;
+    public int currentLevel = 0;
 
     public void Upgrade()
     {

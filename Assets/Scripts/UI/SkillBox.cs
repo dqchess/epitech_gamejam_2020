@@ -38,6 +38,7 @@ public class SkillBox : MonoBehaviour
         if (skill.maxLevel > currentLevel)
         {
             currentLevel += 1;
+            skill.currentLevel = currentLevel;
             Debug.Log(skill.skillName + " upgraded to level " + currentLevel + " !");
         } else
         {
