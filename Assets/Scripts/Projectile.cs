@@ -22,6 +22,7 @@ public class Projectile : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col) {
 
 		if (col.gameObject != firing_ship && col.gameObject.tag != "Projectile" && col.gameObject.layer == 8) {
+			Debug.Log(firing_ship.name);
 			Instantiate(hit_effect, transform.position, Quaternion.identity);
 			Destroy(gameObject);
 		}
