@@ -337,12 +337,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.48000005, y: 0.48000005, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &370886464 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 155839947889213965, guid: 462417a258984034ab4488b8ed8f4dfe,
-    type: 3}
-  m_PrefabInstance: {fileID: 593440086}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &370886465 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 155839947889213962, guid: 462417a258984034ab4488b8ed8f4dfe,
@@ -454,20 +448,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 155839947198059955, guid: 462417a258984034ab4488b8ed8f4dfe,
-        type: 3}
-      propertyPath: parent
-      value: 
-      objectReference: {fileID: 370886464}
     - target: {fileID: 210113531402270674, guid: 462417a258984034ab4488b8ed8f4dfe,
         type: 3}
       propertyPath: m_Name
       value: Ship2.0
-      objectReference: {fileID: 0}
-    - target: {fileID: 210113531402270674, guid: 462417a258984034ab4488b8ed8f4dfe,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 210113531402270677, guid: 462417a258984034ab4488b8ed8f4dfe,
         type: 3}

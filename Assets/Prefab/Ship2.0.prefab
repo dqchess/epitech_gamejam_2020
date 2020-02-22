@@ -4821,6 +4821,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  parent: {fileID: 155839947889213965}
 --- !u!1 &155839947235003584
 GameObject:
   m_ObjectHideFlags: 0
@@ -5155,6 +5156,7 @@ GameObject:
   - component: {fileID: 155839947889213960}
   - component: {fileID: 155839947889213967}
   - component: {fileID: 155839947889213966}
+  - component: {fileID: 4598800328816066655}
   m_Layer: 8
   m_Name: Ship_1
   m_TagString: Player
@@ -5311,6 +5313,20 @@ PolygonCollider2D:
       - {x: 0.15439448, y: 0.08871953}
       - {x: 0.15753058, y: 0.15739036}
       - {x: 0.08, y: 0.32}
+--- !u!114 &4598800328816066655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155839947889213965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49920a2fb71bb660d958ad69f1f36453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crystals: 100
+  miningValue: 1
 --- !u!1 &210113530302851610
 GameObject:
   m_ObjectHideFlags: 0
@@ -6084,6 +6100,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  parent: {fileID: 0}
 --- !u!1 &210113530549873382
 GameObject:
   m_ObjectHideFlags: 0
@@ -6341,6 +6358,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  parent: {fileID: 0}
 --- !u!1 &210113530709411271
 GameObject:
   m_ObjectHideFlags: 0
@@ -11592,6 +11610,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  parent: {fileID: 0}
 --- !u!1 &210113531402270674
 GameObject:
   m_ObjectHideFlags: 0
@@ -11601,7 +11620,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 210113531402270677}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ship2.0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11941,6 +11960,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  parent: {fileID: 0}
 --- !u!1 &210113531672497149
 GameObject:
   m_ObjectHideFlags: 0
@@ -12046,6 +12066,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  parent: {fileID: 0}
 --- !u!1 &210113531675818412
 GameObject:
   m_ObjectHideFlags: 0
@@ -12472,6 +12493,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  parent: {fileID: 0}
 --- !u!1 &210113531840095295
 GameObject:
   m_ObjectHideFlags: 0
@@ -12668,6 +12690,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  parent: {fileID: 0}
 --- !u!1 &210113532015822307
 GameObject:
   m_ObjectHideFlags: 0
@@ -13106,6 +13129,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  parent: {fileID: 0}
 --- !u!1 &210113532149758413
 GameObject:
   m_ObjectHideFlags: 0
@@ -13119,6 +13143,7 @@ GameObject:
   - component: {fileID: 210113532149758417}
   - component: {fileID: 210113532149758414}
   - component: {fileID: 210113532149758415}
+  - component: {fileID: 2419529333925251814}
   m_Layer: 8
   m_Name: Ship_2
   m_TagString: Player
@@ -13293,6 +13318,20 @@ PolygonCollider2D:
       - {x: 0.21281263, y: -0.5338808}
       - {x: 0.29999998, y: -0.45}
       - {x: 0.29999998, y: -0.29}
+--- !u!114 &2419529333925251814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210113532149758413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49920a2fb71bb660d958ad69f1f36453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crystals: 100
+  miningValue: 1
 --- !u!1 &210113532274134490
 GameObject:
   m_ObjectHideFlags: 0
@@ -13700,3 +13739,4 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
+  parent: {fileID: 0}
