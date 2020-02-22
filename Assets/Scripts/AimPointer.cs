@@ -16,16 +16,15 @@ public class AimPointer : MonoBehaviour {
 	}
 	
 	void Start () {
-		Screen.lockCursor = true;
 	}
 	
 	void Update () {
-		Screen.lockCursor = true;
 		
 		float x_axis = Input.GetAxis("Mouse X");
 		float y_axis = Input.GetAxis("Mouse Y");
 	
-		pointerPosition += new Vector2(x_axis * mouse_sensitivity_modifier, y_axis * mouse_sensitivity_modifier);
+		// pointerPosition += new Vector2(x_axis, y_axis * mouse_sensitivity_modifier);
+		pointerPosition = Input.mousePosition;
 											
 		pointerPosition.x = Mathf.Clamp (pointerPosition.x, 0, Screen.width);
 		pointerPosition.y = Mathf.Clamp (pointerPosition.y, 0, Screen.height);

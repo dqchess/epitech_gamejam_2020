@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: e9777db300fb3054d96c5af6ff1d9ed9
+=======
 guid: 79930f95bfaa4804f9596e8ebf2886e5
+>>>>>>> origin/antoine
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -13,6 +13,7 @@ public class AutoTurret : MonoBehaviour
 	public float fireRate = 10.0f;
 	private float nextFire = 0;
     public bool hasTarget;
+	public GameObject parent;
     public Vector3 test;
 	// Use this for initialization
 	void Start () {
@@ -52,7 +53,7 @@ public class AutoTurret : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject.layer == 8 && hit.collider.gameObject != gameObject && barrel_hardpoints != null && nextFire >= fireRate) {
                 GameObject bullet = (GameObject) Instantiate(weapon_prefab, barrel_hardpoints[barrel_index].transform.position, transform.rotation);
                 bullet.GetComponent<Rigidbody2D>().AddForce(bullet.transform.up * shot_speed);
-                bullet.GetComponent<Projectile>().firing_ship = transform.parent.gameObject;
+                bullet.GetComponent<Projectile>().firing_ship = parent;
                 barrel_index++;
                 if (barrel_index >= barrel_hardpoints.Length)
                     barrel_index = 0;
