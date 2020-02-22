@@ -48,4 +48,10 @@ public class asteroid : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        FindObjectOfType<SoundManagers>().Play("Impact_Asteroid");
+        Debug.Log("impact");
+    }
+
 }
