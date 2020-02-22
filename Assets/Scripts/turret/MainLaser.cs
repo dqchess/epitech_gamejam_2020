@@ -9,13 +9,13 @@ public class MainLaser : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        createTurret(0);
+        createTurret(4);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void createTurret(int num)
