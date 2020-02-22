@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shield : DamagableObj
+public class Shield : DamageableObj
 {
     // Start is called before the first frame update
     public float reloadTime = 20f;
@@ -13,7 +13,8 @@ public class Shield : DamagableObj
     public override void takeDamage(int damage)
     {
         hp -= damage;
-        if (hp <= 0) {
+        if (hp <= 0)
+        {
             hp = 0;
             Debug.Log("death");
             isReloading = true;
@@ -25,9 +26,11 @@ public class Shield : DamagableObj
     // Update is called once per frame
     void Update()
     {
-        if (isReloading ==true) {
+        if (isReloading == true)
+        {
             actualTime += Time.deltaTime;
-            if (actualTime >= reloadTime) {
+            if (actualTime >= reloadTime)
+            {
                 isReloading = false;
                 shield.SetActive(true);
                 hp = maxHp;
