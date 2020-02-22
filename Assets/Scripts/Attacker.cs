@@ -14,19 +14,24 @@ public class Attacker : MonoBehaviour
 
     private void Update() {
         if (interactZone)
-            interactZone.activate(this);
+            interactZone.updateZone(this);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         Component zone = other.GetComponent("InteractionZone");
         if (zone != null) {
             interactZone = (InteractionZone)zone;
+            interactZone.activate(this);
         }
     }
 
-
     private void OnTriggerExit2D(Collider2D other) {
+        Component zone = other.GetComponent("InteractionZone");
+        if (zone != null) {
+            interactZone.deactivate(this);
+        }
         interactZone = null;
+
     }
 
 }
