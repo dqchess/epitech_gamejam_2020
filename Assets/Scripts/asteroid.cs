@@ -59,4 +59,9 @@ public class asteroid : MonoBehaviour
         Debug.Log("impact -> " + other.gameObject.tag);
     }
 
+    void takeDamage(int damage)
+    {
+        life -= damage;
+    }
+
 }
