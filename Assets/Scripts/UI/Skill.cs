@@ -9,6 +9,7 @@ public class Skill : ScriptableObject
     public string skillName;
     public Sprite icon;
     public int maxLevel;
+    public int levelThreshold;
     public List<int> price;
     public bool hasInput;
     public KeyCode input;
