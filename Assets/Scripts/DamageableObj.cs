@@ -12,7 +12,8 @@ public class DamageableObj : MonoBehaviour
     virtual public void takeDamage(int damage)
     {
         hp -= damage;
-        if (hp <= 0) {
+        if (hp <= 0)
+        {
             hp = 0;
             Debug.Log(name + " is dead.");
             Destroy(gameObject);

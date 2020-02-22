@@ -28,10 +28,6 @@ public class SpawnAsteroid : MonoBehaviour
         Vector3 downLeft = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));
         Vector3 downRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0));
 
-
-        Debug.Log("upLeft >- " + upLeft);
-        Debug.Log("downLeft >- " + downLeft);
-        Debug.Log("downRight >- " + downRight);
         up = upLeft.y;
         down = downRight.y;
         left = downLeft.x;

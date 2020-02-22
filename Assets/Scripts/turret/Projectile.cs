@@ -26,7 +26,7 @@ public class Projectile : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
 
-        if (col.gameObject != firing_ship && col.gameObject.tag != "Projectile" && col.gameObject.layer == 8 && col.gameObject.tag != firing_ship.tag)
+        if (col.gameObject != firing_ship && col.gameObject.tag != "Projectile" && col.gameObject.layer == 8 && col.gameObject.tag != firing_ship.tag && col.isTrigger == false)
         {
             if (gameObject.tag != "Laser")
             {
@@ -46,7 +46,7 @@ public class Projectile : MonoBehaviour
     void OnTriggerStay2D(Collider2D col)
     {
 
-        if (col.gameObject != firing_ship && col.gameObject.tag != "Projectile" && col.gameObject.layer == 8 && gameObject.tag == "Laser")
+        if (col.gameObject != firing_ship && col.gameObject.tag != "Projectile" && col.gameObject.layer == 8 && gameObject.tag == "Laser" && col.gameObject.tag != firing_ship.tag && col.isTrigger == false)
         {
 
             if (col.gameObject.GetComponent<DamageableObj>())
