@@ -5269,7 +5269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slideAttaque: 0
   acceleration_amount: 38
-  rotation_speed: 29
+  rotation_speed: 5
   turret: {fileID: 0}
   turret_rotation_speed: 3
 --- !u!60 &155839947889213966
@@ -5325,8 +5325,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49920a2fb71bb660d958ad69f1f36453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystals: 100
-  miningValue: 1
 --- !u!1 &210113530302851610
 GameObject:
   m_ObjectHideFlags: 0
@@ -6100,7 +6098,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
-  parent: {fileID: 0}
+  parent: {fileID: 210113532149758413}
 --- !u!1 &210113530549873382
 GameObject:
   m_ObjectHideFlags: 0
@@ -6358,7 +6356,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
-  parent: {fileID: 0}
+  parent: {fileID: 155839947889213965}
 --- !u!1 &210113530709411271
 GameObject:
   m_ObjectHideFlags: 0
@@ -11610,7 +11608,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
-  parent: {fileID: 0}
+  parent: {fileID: 210113532149758413}
 --- !u!1 &210113531402270674
 GameObject:
   m_ObjectHideFlags: 0
@@ -11659,6 +11657,7 @@ MonoBehaviour:
   crystals: 0
   health: 100
   damage: 100
+  miningValue: 10
 --- !u!1 &210113531503390376
 GameObject:
   m_ObjectHideFlags: 0
@@ -11976,7 +11975,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
-  parent: {fileID: 0}
+  parent: {fileID: 155839947889213965}
 --- !u!1 &210113531672497149
 GameObject:
   m_ObjectHideFlags: 0
@@ -12082,7 +12081,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
-  parent: {fileID: 0}
+  parent: {fileID: 155839947889213965}
 --- !u!1 &210113531675818412
 GameObject:
   m_ObjectHideFlags: 0
@@ -12509,7 +12508,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
-  parent: {fileID: 0}
+  parent: {fileID: 210113532149758413}
 --- !u!1 &210113531840095295
 GameObject:
   m_ObjectHideFlags: 0
@@ -12706,7 +12705,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
-  parent: {fileID: 0}
+  parent: {fileID: 210113532149758413}
 --- !u!1 &210113532015822307
 GameObject:
   m_ObjectHideFlags: 0
@@ -13145,7 +13144,7 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
-  parent: {fileID: 0}
+  parent: {fileID: 210113532149758413}
 --- !u!1 &210113532149758413
 GameObject:
   m_ObjectHideFlags: 0
@@ -13346,8 +13345,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49920a2fb71bb660d958ad69f1f36453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystals: 100
-  miningValue: 1
 --- !u!1 &210113532274134490
 GameObject:
   m_ObjectHideFlags: 0
@@ -13755,4 +13752,4 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 0.5
-  parent: {fileID: 0}
+  parent: {fileID: 155839947889213965}
