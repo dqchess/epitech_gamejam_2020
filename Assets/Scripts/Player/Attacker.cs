@@ -18,6 +18,8 @@ public class Attacker : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
+
+
         Component zone = other.GetComponent("InteractionZone");
         if (zone != null) {
             interactZone = (InteractionZone)zone;
@@ -29,8 +31,9 @@ public class Attacker : MonoBehaviour
         Component zone = other.GetComponent("InteractionZone");
         if (zone != null) {
             interactZone.deactivate(this);
+            interactZone = null;
+
         }
-        interactZone = null;
 
     }
 
