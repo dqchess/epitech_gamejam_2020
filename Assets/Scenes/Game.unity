@@ -459,6 +459,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1561298423}
     - target: {fileID: 4455883289168852952, guid: e11d3e9929538d249a2acd6194d3aed0,
+        type: 3}
       propertyPath: upgradeEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
