@@ -12,7 +12,7 @@ public class WallManager : MonoBehaviour
     public WallManager wallManager;
 
     List<SpriteRenderer> spriteRenderers = new List<SpriteRenderer>();
-    List<CircleCollider2D> collider2d = new List<CircleCollider2D>();
+    List<PolygonCollider2D> collider2d = new List<PolygonCollider2D>();
 
     public bool isTriggered = false;
 

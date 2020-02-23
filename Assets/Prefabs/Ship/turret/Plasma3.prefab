@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 4873297126015375082}
   - component: {fileID: 5916022123337447113}
   m_Layer: 8
-  m_Name: Plasma_1
+  m_Name: Plasma3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285,7 +285,8 @@ MonoBehaviour:
   barrel_hardpoints:
   - {fileID: 4145709543293526519}
   turret_rotation_speed: 1
-  shot_speed: 355
-  fireRate: 0.5
-  damage: 0
+  shot_speed: 340
+  fireRate: 0.7
+  damage: 40
   parent: {fileID: 0}
+  isInPlayer: 1

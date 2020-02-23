@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 4582458304990217962}
   - component: {fileID: 1460659363201476131}
   - component: {fileID: 2240295080128779855}
-  - component: {fileID: 2240295080128779854}
   - component: {fileID: 2240295080128779852}
   - component: {fileID: 2355166350123034504}
-  - component: {fileID: 5267232641884048507}
+  - component: {fileID: 3513124732233705969}
+  - component: {fileID: -4206247098654603082}
   m_Layer: 8
   m_Name: Asteroid 2
   m_TagString: Asteroid
@@ -107,22 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &2240295080128779854
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2240295080128779853}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.34
 --- !u!114 &2240295080128779852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,7 +135,56 @@ MonoBehaviour:
   hp: 10
   maxHp: 10
   regenAmount: 0
---- !u!114 &5267232641884048507
+--- !u!60 &3513124732233705969
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2240295080128779853}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.76, y: 0.63}
+    newSize: {x: 0.76, y: 0.63}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.3751657, y: 0.10974407}
+      - {x: 0.31393075, y: 0.20239496}
+      - {x: 0.22909641, y: 0.2685542}
+      - {x: 0.16066265, y: 0.28438282}
+      - {x: 0.055257678, y: 0.3006568}
+      - {x: -0.054108977, y: 0.29804993}
+      - {x: -0.14967942, y: 0.23043299}
+      - {x: -0.19011593, y: 0.2154026}
+      - {x: -0.23408139, y: 0.15385532}
+      - {x: -0.34355414, y: 0.04665613}
+      - {x: -0.37194276, y: -0.027846575}
+      - {x: -0.36814183, y: -0.17087436}
+      - {x: -0.34777105, y: -0.2204969}
+      - {x: -0.30537295, y: -0.2857039}
+      - {x: -0.22876501, y: -0.3133886}
+      - {x: 0.0032229424, y: -0.274714}
+      - {x: 0.025857568, y: -0.19848204}
+      - {x: 0.0357275, y: -0.13357306}
+      - {x: 0.078573704, y: -0.09683108}
+      - {x: 0.1431011, y: -0.058243513}
+      - {x: 0.20995486, y: -0.050828457}
+      - {x: 0.26787794, y: -0.07028937}
+      - {x: 0.30237317, y: -0.049286842}
+      - {x: 0.37284648, y: 0.028418541}
+--- !u!114 &-4206247098654603082
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

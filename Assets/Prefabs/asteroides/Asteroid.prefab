@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8596155691092206541}
   - component: {fileID: 6596644767940947533}
-  - component: {fileID: 7790879138361297801}
   - component: {fileID: 7954170560435475772}
   - component: {fileID: 5458073469838698650}
   - component: {fileID: 3772236917379157648}
-  - component: {fileID: 6719689549667334532}
+  - component: {fileID: 6341410860638299138}
+  - component: {fileID: -3326656543162965799}
   m_Layer: 8
   m_Name: Asteroid
   m_TagString: Asteroid
@@ -86,22 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &7790879138361297801
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5154048254691849239}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.63
 --- !u!50 &7954170560435475772
 Rigidbody2D:
   serializedVersion: 4
@@ -151,7 +135,58 @@ MonoBehaviour:
   hp: 10
   maxHp: 10
   regenAmount: 0
---- !u!114 &6719689549667334532
+--- !u!60 &6341410860638299138
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5154048254691849239}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.5, y: 1.12}
+    newSize: {x: 1.5, y: 1.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.72564125, y: -0.1865778}
+      - {x: 0.7041092, y: -0.11042929}
+      - {x: 0.5576134, y: 0.1310234}
+      - {x: 0.46607208, y: 0.3184662}
+      - {x: 0.26607513, y: 0.4660735}
+      - {x: 0.12282181, y: 0.5236809}
+      - {x: -0.29846573, y: 0.5332513}
+      - {x: -0.42042923, y: 0.47368097}
+      - {x: -0.51760864, y: 0.41846633}
+      - {x: -0.61803627, y: 0.31760716}
+      - {x: -0.6880379, y: 0.1400001}
+      - {x: -0.6983261, y: 0.041778803}
+      - {x: -0.72564507, y: -0.06828213}
+      - {x: -0.7329941, y: -0.13633728}
+      - {x: -0.72564507, y: -0.2404294}
+      - {x: -0.6346264, y: -0.33289814}
+      - {x: -0.5745411, y: -0.41564417}
+      - {x: -0.5156441, y: -0.4660735}
+      - {x: -0.22999954, y: -0.51846623}
+      - {x: 0.0015335083, y: -0.5217178}
+      - {x: 0.041238785, y: -0.5344839}
+      - {x: 0.18806648, y: -0.5385809}
+      - {x: 0.28957176, y: -0.5097544}
+      - {x: 0.5408592, y: -0.45128846}
+      - {x: 0.67453957, y: -0.37717772}
+      - {x: 0.7208576, y: -0.27889538}
+--- !u!114 &-3326656543162965799
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

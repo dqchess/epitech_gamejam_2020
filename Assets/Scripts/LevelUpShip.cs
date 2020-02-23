@@ -17,6 +17,8 @@ public class LevelUpShip : MonoBehaviour
     private GameObject shipClass2GO;
     private string shipClass2;
 
+    public HealthBar playerHealthBar;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,30 +43,51 @@ public class LevelUpShip : MonoBehaviour
 
     public void LevelUpshipClass2(GameObject newShip) {
         intialShip.SetActive(false);
+        newShip.transform.position = intialShip.transform.position;
+        newShip.transform.rotation = intialShip.transform.rotation;
+        newShip.GetComponent<Rigidbody2D>().velocity = intialShip.GetComponent<Rigidbody2D>().velocity;
+        newShip.GetComponent<Rigidbody2D>().angularVelocity = intialShip.GetComponent<Rigidbody2D>().angularVelocity;
         newShip.SetActive(true);
         shipClass2GO = newShip;
         shipClass2 = newShip.name;
+        playerHealthBar.attachedTo = newShip.transform;
+        playerHealthBar.topOffset = 75;
         // Debug.Log(gameObject.transform.GetChild(0).gameObject.GetActive());
     }
 
     public void LevelUpShipDestroyerClass3(GameObject newShip) {
         shipClass2GO.SetActive(false);
+        DestroyerClass3.transform.position = shipClass2GO.transform.position;
+        DestroyerClass3.transform.rotation = shipClass2GO.transform.rotation;
+        DestroyerClass3.GetComponent<Rigidbody2D>().velocity = shipClass2GO.GetComponent<Rigidbody2D>().velocity;
         DestroyerClass3.SetActive(true);
         newShip.SetActive(true);
+        playerHealthBar.attachedTo = newShip.transform;
+        playerHealthBar.topOffset = 125;
         // Debug.Log(gameObject.transform.GetChild(0).gameObject.GetActive());
     }
 
     public void LevelUpShipSniperClass3(GameObject newShip) {
         shipClass2GO.SetActive(false);
+        SniperClass3.transform.position = shipClass2GO.transform.position;
+        SniperClass3.transform.rotation = shipClass2GO.transform.rotation;
+        SniperClass3.GetComponent<Rigidbody2D>().velocity = shipClass2GO.GetComponent<Rigidbody2D>().velocity;
         SniperClass3.SetActive(true);
         newShip.SetActive(true);
+        playerHealthBar.attachedTo = newShip.transform;
+        playerHealthBar.topOffset = 125;
         // Debug.Log(gameObject.transform.GetChild(0).gameObject.GetActive());
     }
-    
+
     public void LevelUpShipSpeedyClass3(GameObject newShip) {
         shipClass2GO.SetActive(false);
+        SpeedyClass3.transform.position = shipClass2GO.transform.position;
+        SpeedyClass3.transform.rotation = shipClass2GO.transform.rotation;
+        SpeedyClass3.GetComponent<Rigidbody2D>().velocity = shipClass2GO.GetComponent<Rigidbody2D>().velocity;
         SpeedyClass3.SetActive(true);
         newShip.SetActive(true);
+        playerHealthBar.attachedTo = newShip.transform;
+        playerHealthBar.topOffset = 125;
         // Debug.Log(gameObject.transform.GetChild(0).gameObject.GetActive());
     }
 }

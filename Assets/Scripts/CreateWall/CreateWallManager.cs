@@ -13,7 +13,7 @@ public class CreateWallManager : MonoBehaviour
     public WallManager wallManager;
 
     List<SpriteRenderer> spriteRenderers = new List<SpriteRenderer>();
-    List<CircleCollider2D> collider2d = new List<CircleCollider2D>();
+    List<PolygonCollider2D> collider2d = new List<PolygonCollider2D>();
     List<Color> colours = new List<Color>();
 
     void setUpPreShow()
@@ -23,7 +23,7 @@ public class CreateWallManager : MonoBehaviour
         preshow.AddComponent<WallManager>();
         spriteRenderers = new List<SpriteRenderer>(preshow.GetComponentsInChildren<SpriteRenderer>());
 
-        collider2d = new List<CircleCollider2D>(preshow.GetComponentsInChildren<CircleCollider2D>());
+        collider2d = new List<PolygonCollider2D>(preshow.GetComponentsInChildren<PolygonCollider2D>());
 
          for(int i = 0; i < spriteRenderers.Count; ++i)
         {
@@ -42,12 +42,15 @@ public class CreateWallManager : MonoBehaviour
 
     private void SpawnWall(Vector3 pos)
     {
-        if (preshow.GetComponent<WallManager>().isTriggered == true)
+        if (preshow.GetComponent<WallManager>().isTriggered == true) {
+            FindObjectOfType<SoundManagers>().Play("fail_action");
             return;
+        }
         for(int i = 0; i < spriteRenderers.Count; ++i)
         {
             spriteRenderers[i].color = colours[i];
             collider2d[i].isTrigger = false;
+            FindObjectOfType<SoundManagers>().Play("create_wall");
 
 
         }
@@ -55,25 +58,40 @@ public class CreateWallManager : MonoBehaviour
     }
     void Update()
     {
+       if (Input.GetButtonDown("Fire2")) {
+            deactivate();
+        }
+
+        if (Input.GetButtonDown("Fire3")) {
+            activate();
+        }
         if (preshow == null)
             return;
         preshow.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (Input.GetButtonDown("Fire1")) {
             SpawnWall(preshow.transform.position);
         }
+
+
     
         
     }
 
     void deactivate()
     {
+        FindObjectOfType<SoundManagers>().Play("toggle_wall_deactivate");
         Destroy(preshow);
         preshow = null;
     }
 
        void activate()
     {
-        setUpPreShow();
+
+        FindObjectOfType<SoundManagers>().Play("toggle_wall_activate");
+        if (preshow == null)
+             setUpPreShow();
+
+        
     }
 
 }
