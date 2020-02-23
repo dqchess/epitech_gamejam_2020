@@ -98,7 +98,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 200
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  amount: 20
 --- !u!114 &3772236917379157648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,7 +135,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 10
   maxHp: 10
+  healthBar: {fileID: 0}
   regenAmount: 0
+  slayer: {fileID: 0}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!60 &6341410860638299138
 PolygonCollider2D:
   m_ObjectHideFlags: 0

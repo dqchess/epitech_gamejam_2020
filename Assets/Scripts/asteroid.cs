@@ -14,6 +14,7 @@ public class asteroid : MonoBehaviour
     private float down;
     private float left;
     private float right;
+    public int amount;
 
 
     // Use this for initialization
@@ -48,6 +49,7 @@ public class asteroid : MonoBehaviour
         }
         rb = this.GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(dirX * speed, dirY * speed);
+        GetComponent<DamageableObj>().onDeath.AddListener(giveMoney);
 
     }
 
@@ -69,6 +71,14 @@ public class asteroid : MonoBehaviour
     {
         FindObjectOfType<SoundManagers>().Play("Impact_Asteroid");
 
+    }
+
+    public void giveMoney()
+    {
+        if (GetComponent<DamageableObj>().gameObject.tag == "team2")
+            Defenser.instance.crystals += amount;
+        else
+            AttackerStats.instance.crystals += amount;
     }
 
 }

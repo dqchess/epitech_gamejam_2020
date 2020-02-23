@@ -28,7 +28,7 @@ public class Laser : MonoBehaviour {
 			Destroy(gameObject);
 			if (col.gameObject.GetComponent<DamageableObj>()) {
 				Debug.Log("faefaefzfzaazf");
-				col.gameObject.GetComponent<DamageableObj>().takeDamage(damage);
+				col.gameObject.GetComponent<DamageableObj>().takeDamage(damage, firing_ship);
 			}
 		}
 	}

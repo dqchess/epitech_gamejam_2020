@@ -10,11 +10,13 @@ public class DamageableObj : MonoBehaviour
     public float maxHp;
     public HealthBar healthBar;
     public int regenAmount;
+    public GameObject slayer;
 
     public UnityEvent onDeath = new UnityEvent();
 
-    virtual public void takeDamage(int damage)
+    virtual public void takeDamage(int damage, GameObject origin)
     {
+        slayer = origin;
         hp -= damage;
         if (healthBar)
             healthBar.SetHealth(maxHp, hp);

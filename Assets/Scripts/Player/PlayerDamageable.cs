@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerDamageable : DamageableObj
 {
-    override public void takeDamage(int damage)
+    override public void takeDamage(int damage, GameObject origin)
     {
         hp -= damage;
         AttackerStats.instance.hp -= damage;

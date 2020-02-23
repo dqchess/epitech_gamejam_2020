@@ -10,7 +10,7 @@ public class Shield : DamageableObj
     bool isReloading = false;
     public GameObject shield;
     CircleCollider2D col;
-    public override void takeDamage(int damage)
+    public override void takeDamage(int damage, GameObject orign)
     {
         hp -= damage;
         if (hp <= 0)

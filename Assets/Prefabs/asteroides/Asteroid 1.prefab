@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  amount: 10
 --- !u!114 &-3159260204745752921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +137,10 @@ MonoBehaviour:
   maxHp: 100
   healthBar: {fileID: 0}
   regenAmount: 0
+  slayer: {fileID: 0}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!60 &1558815855313856159
 PolygonCollider2D:
   m_ObjectHideFlags: 0

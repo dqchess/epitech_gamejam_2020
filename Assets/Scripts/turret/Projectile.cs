@@ -42,7 +42,7 @@ public class Projectile : MonoBehaviour
             if (col.gameObject.GetComponent<DamageableObj>())
             {
                 Debug.Log("hit " + col.gameObject.name);
-                col.gameObject.GetComponent<DamageableObj>().takeDamage(damage);
+                col.gameObject.GetComponent<DamageableObj>().takeDamage(damage, firing_ship);
             }
         }
     }
@@ -55,7 +55,7 @@ public class Projectile : MonoBehaviour
 
             if (col.gameObject.GetComponent<DamageableObj>())
             {
-                col.gameObject.GetComponent<DamageableObj>().takeDamage(damage);
+                col.gameObject.GetComponent<DamageableObj>().takeDamage(damage, firing_ship);
             }
         }
     }
