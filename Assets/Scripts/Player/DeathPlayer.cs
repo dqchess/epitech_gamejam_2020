@@ -27,10 +27,10 @@ public class DeathPlayer : MonoBehaviour
 
     public void Die()
     {
-
         GameObject.Find("Canvas").SetActive(false);
-        GameObject.Find("gameManager").SetActive(false);
-        GameObject.Find("Station").SetActive(false);
+        GameObject.Find("gameManager").GetComponent<SpawnAsteroid>().enabled = false;
+
+        // GameObject.Find("Station").SetActive(false);
         GameObject.Find("Crystal 1").SetActive(false);//AsteroidWall
         GameObject.Find("AsteroidWall").SetActive(false);//AsteroidWall
         GameObject a = Instantiate(DeathAnim) as GameObject;
