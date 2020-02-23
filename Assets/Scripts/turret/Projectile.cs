@@ -35,7 +35,10 @@ public class Projectile : MonoBehaviour
                 Instantiate(hit_effect, transform.position, Quaternion.identity);
             }
             else
+            {
+                FindObjectOfType<SoundManagers>().Play("tower_shot_explosion");
                 Instantiate(hit_effect, col.gameObject.transform.position, Quaternion.identity);
+            }
             if (col.gameObject.GetComponent<DamageableObj>())
             {
                 Debug.Log("hit " + col.gameObject.name);
