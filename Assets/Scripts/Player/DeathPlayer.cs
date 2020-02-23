@@ -9,8 +9,13 @@ public class DeathPlayer : MonoBehaviour
     public GameObject DeathAnim;
     private bool isDead = false;
 
+	public GameObject canvas;
+	public GameObject gameManager;
+	public GameObject asteroidWall;
+	public GameObject crystal;
 
-    IEnumerator quitGameDefense_win()
+
+	IEnumerator quitGameDefense_win()
     {
         yield return new WaitForSeconds(1);
         Debug.Log("DEATH ");
@@ -27,12 +32,12 @@ public class DeathPlayer : MonoBehaviour
 
     public void Die()
     {
-        GameObject.Find("Canvas").SetActive(false);
-        GameObject.Find("gameManager").GetComponent<SpawnAsteroid>().enabled = false;
+        canvas.SetActive(false);
+        gameManager.GetComponent<SpawnAsteroid>().enabled = false;
 
         // GameObject.Find("Station").SetActive(false);
-        GameObject.Find("Crystal 1").SetActive(false);//AsteroidWall
-        GameObject.Find("AsteroidWall").SetActive(false);//AsteroidWall
+        crystal.SetActive(false);//AsteroidWall
+        asteroidWall.SetActive(false);//AsteroidWall
         GameObject a = Instantiate(DeathAnim) as GameObject;
         a.transform.position = gameObject.transform.position;
 

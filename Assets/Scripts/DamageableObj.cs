@@ -18,6 +18,7 @@ public class DamageableObj : MonoBehaviour
     {
         slayer = origin;
         hp -= damage;
+		Debug.Log(name + "got hit with " + damage + " damage");
         if (healthBar)
             healthBar.SetHealth(maxHp, hp);
         if (hp <= 0)

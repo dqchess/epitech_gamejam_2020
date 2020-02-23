@@ -456,8 +456,8 @@ GameObject:
   - component: {fileID: 7506341393848852214}
   - component: {fileID: 7506341393848852215}
   - component: {fileID: 7506341393848852212}
-  - component: {fileID: 201444718}
   - component: {fileID: 4328032879005045661}
+  - component: {fileID: 201444718}
   m_Layer: 8
   m_Name: Station
   m_TagString: team2
@@ -567,6 +567,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crystals: 0
   gain: 5
+--- !u!114 &4328032879005045661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7506341393848852208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 733a467569ba8b441b29333e82cfbabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathAnim: {fileID: 6202998154373796254, guid: 98a79c5cf1d6db344aef9b1837426039,
+    type: 3}
+  canvas: {fileID: 0}
+  gameManager: {fileID: 0}
+  asteroidWall: {fileID: 0}
+  crystal: {fileID: 0}
 --- !u!114 &201444718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,20 +616,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4328032879005045661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7506341393848852208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 733a467569ba8b441b29333e82cfbabe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DeathAnim: {fileID: 6202998154373796254, guid: 98a79c5cf1d6db344aef9b1837426039,
-    type: 3}
 --- !u!1 &7506341394004848004
 GameObject:
   m_ObjectHideFlags: 0

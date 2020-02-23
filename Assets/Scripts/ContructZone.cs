@@ -49,8 +49,9 @@ public class ContructZone : MonoBehaviour
         tmp.GetComponent<DamageableObj>().healthBar = healthBar.GetComponent<HealthBar>();
         healthBar.GetComponent<HealthBar>().attachedTo = tmp.transform;
         healthBar.GetComponent<HealthBar>().topOffset = 40;
-        healthBar.GetComponent<RectTransform>().sizeDelta = new Vector2(65, 5);
-        healthBar.gameObject.SetActive(true);
+        healthBar.GetComponent<RectTransform>().sizeDelta = new Vector2(65, 8);
+		healthBar.GetComponent<HealthBar>().SetHealth(tmp.GetComponent<DamageableObj>().maxHp, tmp.GetComponent<DamageableObj>().hp);
+		healthBar.gameObject.SetActive(true);
         turret[num] = tmp;
     }
 

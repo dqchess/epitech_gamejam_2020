@@ -18,6 +18,6 @@ MonoBehaviour:
   levelThreshold: 3
   price: c800000090010000f401000020030000b004000008070000c4090000b80b0000ac0d0000
   hasInput: 1
-  input: 53
-  inputName: 5
-  currentLevel: 9
+  input: 52
+  inputName: 4
+  currentLevel: 0

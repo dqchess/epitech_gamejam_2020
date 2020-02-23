@@ -59,4 +59,10 @@ public class AttackerStats : MonoBehaviour
     {
         miningValue += value;
     }
+
+	public void increaseHp(float value)
+	{
+		maxHp += value;
+		hp += value;
+	}
 }

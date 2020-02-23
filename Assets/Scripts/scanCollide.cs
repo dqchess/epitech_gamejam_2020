@@ -22,7 +22,7 @@ public class scanCollide : MonoBehaviour
     void Update()
     {
         AstarPath.active.UpdateGraphs(colliding.bounds);
-        if (!target.target.gameObject.activeSelf) {
+        if (target && !target.target.gameObject.activeSelf) {
             GetPlayer();
         }
     }
@@ -31,8 +31,8 @@ public class scanCollide : MonoBehaviour
     {
         for (int i = 0; i < parentShip.transform.childCount; i++) {
             if (parentShip.transform.GetChild(i).gameObject.activeSelf == true) {
-                if (target)
-                    target.target = parentShip.transform.GetChild(i);
+				target.target = parentShip.transform.GetChild(i);
+				Debug.Log(target.target.name);
             }
         }
     }
