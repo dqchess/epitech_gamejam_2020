@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5636610997964652756}
   m_LocalRotation: {x: -0, y: -0, z: 0.2758145, w: -0.96121097}
   m_LocalPosition: {x: -2.126, y: -2.0300965, z: -1}
-  m_LocalScale: {x: 2, y: 2, z: 0.16666667}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 0.16666667}
   m_Children:
   - {fileID: 5636610998243735405}
   m_Father: {fileID: 0}
@@ -108,7 +108,7 @@ MonoBehaviour:
   hasTarget: 0
   parent: {fileID: 0}
   nbShots: 1
-  damage: 0
+  damage: 150
 --- !u!58 &5636610997964652758
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -124,7 +124,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.00000023841858, y: 0.00000025331974}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 4
 --- !u!114 &9114612138859251495
 MonoBehaviour:
   m_ObjectHideFlags: 0
