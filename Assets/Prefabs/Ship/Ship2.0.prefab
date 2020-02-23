@@ -5341,6 +5341,7 @@ MonoBehaviour:
   hp: 0
   maxHp: 0
   regenAmount: 0
+  playerHealthBar: {fileID: 0}
 --- !u!1 &156219598133391316
 GameObject:
   m_ObjectHideFlags: 0
@@ -12537,6 +12538,7 @@ MonoBehaviour:
   hp: 0
   maxHp: 0
   regenAmount: 0
+  playerHealthBar: {fileID: 0}
 --- !u!1 &210113532341970468
 GameObject:
   m_ObjectHideFlags: 0
@@ -13338,6 +13340,7 @@ MonoBehaviour:
   hp: 0
   maxHp: 0
   regenAmount: 0
+  playerHealthBar: {fileID: 0}
 --- !u!1 &981396480578397750
 GameObject:
   m_ObjectHideFlags: 0
@@ -18500,6 +18503,7 @@ MonoBehaviour:
   hp: 0
   maxHp: 0
   regenAmount: 0
+  playerHealthBar: {fileID: 0}
 --- !u!1 &1528172521142767285
 GameObject:
   m_ObjectHideFlags: 0
@@ -23707,6 +23711,7 @@ MonoBehaviour:
   hp: 0
   maxHp: 0
   regenAmount: 0
+  playerHealthBar: {fileID: 0}
 --- !u!1 &2717182459755269617
 GameObject:
   m_ObjectHideFlags: 0
@@ -24082,6 +24087,7 @@ MonoBehaviour:
   hp: 0
   maxHp: 0
   regenAmount: 0
+  playerHealthBar: {fileID: 0}
 --- !u!1 &2821257775356187148
 GameObject:
   m_ObjectHideFlags: 0
@@ -24821,6 +24827,7 @@ MonoBehaviour:
   hp: 0
   maxHp: 0
   regenAmount: 0
+  playerHealthBar: {fileID: 0}
 --- !u!1 &3961516976803503615
 GameObject:
   m_ObjectHideFlags: 0
@@ -43324,6 +43331,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8496795688320468697}
     m_Modifications:
+    - target: {fileID: 636808022988062272, guid: 8319e2d8f5bfb474bb4bf29217b84ab2,
+        type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 734666185737964026}
     - target: {fileID: 4546005968624001331, guid: 8319e2d8f5bfb474bb4bf29217b84ab2,
         type: 3}
       propertyPath: m_Name
@@ -45884,6 +45896,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8496795688320468697}
     m_Modifications:
+    - target: {fileID: 636808022988062272, guid: 8319e2d8f5bfb474bb4bf29217b84ab2,
+        type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 734666185737964026}
     - target: {fileID: 4546005968624001331, guid: 8319e2d8f5bfb474bb4bf29217b84ab2,
         type: 3}
       propertyPath: m_Name
@@ -47344,6 +47361,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4896367408666619264, guid: 4ce1690d792325f4890050d5331cc248,
+        type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 2552321138495758789}
     - target: {fileID: 5930087437960924579, guid: 4ce1690d792325f4890050d5331cc248,
         type: 3}
       propertyPath: m_SortingOrder
@@ -48289,6 +48311,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4896367408666619264, guid: 4ce1690d792325f4890050d5331cc248,
+        type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 2552321138495758789}
     - target: {fileID: 8373222933386916595, guid: 4ce1690d792325f4890050d5331cc248,
         type: 3}
       propertyPath: m_Name
