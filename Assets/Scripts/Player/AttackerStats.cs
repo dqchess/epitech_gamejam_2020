@@ -27,4 +27,9 @@ public class AttackerStats : MonoBehaviour
 
     public int damage = 100;
     public float miningValue = 10;
+
+    public float attackCoeff = 1f;
+    public float fireRateCoeff = 1f;
+    public float moveSpeedCoeff = 1f;
+    public float shotSpeedCoeff = 1f;
 }

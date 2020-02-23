@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 6474648115305873576}
   - component: {fileID: 1773920268964393280}
   m_Layer: 8
-  m_Name: Lazer_1
+  m_Name: Lazer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -254,10 +254,11 @@ MonoBehaviour:
   barrel_hardpoints:
   - {fileID: 8495383124624848971}
   turret_rotation_speed: 1
-  shot_speed: 355
+  shot_speed: 400
   fireRate: 0.5
-  damage: 0
+  damage: 20
   parent: {fileID: 0}
+  isInPlayer: 1
 --- !u!1 &8495383124624848971
 GameObject:
   m_ObjectHideFlags: 0

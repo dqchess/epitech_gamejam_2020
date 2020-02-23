@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 5930087437960924579}
   - component: {fileID: 4896367408666619264}
   m_Layer: 8
-  m_Name: lazer lvl 1
+  m_Name: Plasma1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -279,12 +279,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootTouchName: Jump
+  nbShots: 1
   lockTurret: 1
   weapon_prefab: {fileID: 100000, guid: 466436d2504573e43af139d1e84e4dcf, type: 3}
   barrel_hardpoints:
   - {fileID: 2909903894971415230}
   turret_rotation_speed: 1
-  shot_speed: 355
-  fireRate: 0.5
-  damage: 0
+  shot_speed: 330
+  fireRate: 0.7
+  damage: 20
   parent: {fileID: 0}
+  isInPlayer: 1

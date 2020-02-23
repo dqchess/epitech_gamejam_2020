@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skill: {fileID: 11400000, guid: 24255d19ce30c4746b3a5510b6f46751, type: 2}
+  canBuy: 0
   skillPointPrefab: {fileID: 8544486818301180328, guid: 49ea1cb1353f6c14e8d6fe62d88f09b0,
     type: 3}
   upgradeEvents:
