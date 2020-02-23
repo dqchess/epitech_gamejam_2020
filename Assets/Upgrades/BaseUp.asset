@@ -16,7 +16,7 @@ MonoBehaviour:
   icon: {fileID: -6498374808969892595, guid: 1314bda8c95e23c409bb8be32c983ed6, type: 3}
   maxLevel: 9
   levelThreshold: 3
-  price: 
+  price: c800000090010000f401000020030000b004000008070000c4090000b80b0000ac0d0000
   hasInput: 0
   input: 0
   inputName: 
