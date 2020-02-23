@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a601d37246a4ed04db104ae9064d8aa9, type: 3}
-  m_Name: Speedy_3_2
+  m_Name: Speedy_3_3
   m_EditorClassIdentifier: 
   className: Speedy
   classImage: {fileID: 21300000, guid: bf51d33384664244f9aca0e60aa77968, type: 3}
