@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Projectile : MonoBehaviour {
+public class Laser : MonoBehaviour {
 	public GameObject shoot_effect;
 	public GameObject hit_effect;
 	public GameObject firing_ship;
@@ -26,9 +26,9 @@ public class Projectile : MonoBehaviour {
 			Debug.Log(col.gameObject.name);
 			Instantiate(hit_effect, transform.position, Quaternion.identity);
 			Destroy(gameObject);
-			if (col.gameObject.GetComponent<DamagableObj>()) {
+			if (col.gameObject.GetComponent<DamageableObj>()) {
 				Debug.Log("faefaefzfzaazf");
-				col.gameObject.GetComponent<DamagableObj>().takeDamage(damage);
+				col.gameObject.GetComponent<DamageableObj>().takeDamage(damage);
 			}
 		}
 	}

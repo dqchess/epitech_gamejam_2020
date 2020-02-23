@@ -8,6 +8,7 @@ public class scanCollide : MonoBehaviour
     // Start is called before the first frame update
     Seeker seeker;
     AIDestinationSetter target;
+    DamageableObj salut;
     public Collider2D colliding;
     void Start()
     {
@@ -20,7 +21,7 @@ public class scanCollide : MonoBehaviour
     /// </summary>
     void Update()
     {
-            AstarPath.active.UpdateGraphs(colliding.bounds);
+        AstarPath.active.UpdateGraphs(colliding.bounds);
     }
 
     // Update is called once per frame

@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class MainLaser : MonoBehaviour
 {
-    public GameObject [] turrets;
+    public GameObject[] turrets;
     public GameObject actualTurret;
     // Start is called before the first frame update
     void Start()
     {
-        createTurret(0);
+        createTurret(4);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void createTurret(int num)
@@ -25,9 +25,10 @@ public class MainLaser : MonoBehaviour
             Debug.Log("too many turret");
             return;
         }
+
         GameObject turretToBuild = turrets[num];
         turretToBuild.GetComponent<PlayerControlledTurret>().parent = transform.parent.gameObject;
-        actualTurret =(GameObject)Instantiate(turretToBuild, transform.position, transform.rotation, transform);
+        actualTurret = (GameObject)Instantiate(turretToBuild, transform.position, transform.rotation, transform);
     }
 
     void destroyTurret()
@@ -36,4 +37,5 @@ public class MainLaser : MonoBehaviour
         if (actualTurret)
             Destroy(actualTurret);
     }
+
 }
