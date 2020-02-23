@@ -18,6 +18,8 @@ public class Shield : DamageableObj
             hp = 0;
             Debug.Log("death");
             isReloading = true;
+
+            FindObjectOfType<SoundManagers>().Play("shield-down");
             shield.SetActive(false);
             GetComponent<CircleCollider2D>().enabled = false;
         }
@@ -32,6 +34,7 @@ public class Shield : DamageableObj
             if (actualTime >= reloadTime)
             {
                 isReloading = false;
+                FindObjectOfType<SoundManagers>().Play("shield-up");
                 shield.SetActive(true);
                 hp = maxHp;
                 actualTime = 0;
