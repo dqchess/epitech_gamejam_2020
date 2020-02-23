@@ -102,10 +102,11 @@ MonoBehaviour:
   barrel_hardpoints:
   - {fileID: 7153703706079668606}
   turret_rotation_speed: 1
-  shot_speed: 355
-  fireRate: 0.5
-  damage: 0
+  shot_speed: 335
+  fireRate: 0.6
+  damage: 30
   parent: {fileID: 0}
+  isInPlayer: 1
 --- !u!1 &7057400298979810394
 GameObject:
   m_ObjectHideFlags: 0
