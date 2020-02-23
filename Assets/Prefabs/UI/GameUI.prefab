@@ -1935,6 +1935,7 @@ MonoBehaviour:
   attackSideParent: {fileID: 7500602924926522590}
   defenseSideParent: {fileID: 7500602924290698459}
   attackCrystalCount: {fileID: 248054152}
+  defenseCrystalCount: {fileID: 1824342470}
   attackSkillBoxes: []
   defenseSkillBoxes: []
   autoTurretBoxes:
