@@ -24,7 +24,8 @@ public class DamageableObj : MonoBehaviour
             Debug.Log(name + " is dead.");
             if (onDeath != null)
                 onDeath.Invoke();
-            Destroy(gameObject);
+            if (gameObject.name != "Station")
+                Destroy(gameObject);
         }
     }
     virtual public void increaseHp(int amount)

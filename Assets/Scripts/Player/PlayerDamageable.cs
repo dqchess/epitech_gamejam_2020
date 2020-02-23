@@ -15,7 +15,9 @@ public class PlayerDamageable : DamageableObj
             hp = 0;
             AttackerStats.instance.hp = 0;
             Debug.Log(name + " is dead.");
-            Destroy(gameObject);
+            if (onDeath != null)
+                onDeath.Invoke();
+            // Destroy(gameObject);
         }
     }
 
