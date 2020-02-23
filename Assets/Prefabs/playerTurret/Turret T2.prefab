@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootTouchName: Fire1
+  nbShots: 2
   lockTurret: 0
   weapon_prefab: {fileID: 100000, guid: bfe0ba4acc768a5448d46a6c63d8106a, type: 3}
   barrel_hardpoints:
@@ -104,8 +105,8 @@ MonoBehaviour:
   - {fileID: 2793838531863558966}
   turret_rotation_speed: 1
   shot_speed: 355
-  fireRate: 0.5
-  damage: 10
+  fireRate: 3
+  damage: 5
   parent: {fileID: 0}
 --- !u!1 &2793838531863558966
 GameObject:

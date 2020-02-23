@@ -38,4 +38,9 @@ public class Defenser : MonoBehaviour
             t = 0;
         }
     }
+
+    public void upgradeGain(int amount)
+    {
+        gain += amount;
+    }
 }
