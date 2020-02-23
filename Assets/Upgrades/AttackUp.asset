@@ -11,13 +11,13 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 313e9b461c18c704abbd6c2a299a5c8a, type: 3}
   m_Name: AttackUp
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   skillName: AttackUp
   icon: {fileID: -4841198759364821401, guid: 1314bda8c95e23c409bb8be32c983ed6, type: 3}
   maxLevel: 15
   levelThreshold: 5
-  price:
+  price: 64000000c80000002c01000090010000f401000058020000bc0200002003000084030000e80300004c040000b00400001405000078050000dc050000
   hasInput: 1
   input: 49
   inputName: 1
-  currentLevel: 15
+  currentLevel: 1

@@ -45,6 +45,8 @@ public class LevelUpShip : MonoBehaviour
         intialShip.SetActive(false);
         newShip.transform.position = intialShip.transform.position;
         newShip.transform.rotation = intialShip.transform.rotation;
+        newShip.GetComponent<Rigidbody2D>().velocity = intialShip.GetComponent<Rigidbody2D>().velocity;
+        newShip.GetComponent<Rigidbody2D>().angularVelocity = intialShip.GetComponent<Rigidbody2D>().angularVelocity;
         newShip.SetActive(true);
         shipClass2GO = newShip;
         shipClass2 = newShip.name;
@@ -57,6 +59,7 @@ public class LevelUpShip : MonoBehaviour
         shipClass2GO.SetActive(false);
         DestroyerClass3.transform.position = shipClass2GO.transform.position;
         DestroyerClass3.transform.rotation = shipClass2GO.transform.rotation;
+        DestroyerClass3.GetComponent<Rigidbody2D>().velocity = shipClass2GO.GetComponent<Rigidbody2D>().velocity;
         DestroyerClass3.SetActive(true);
         newShip.SetActive(true);
         playerHealthBar.attachedTo = newShip.transform;
@@ -68,6 +71,7 @@ public class LevelUpShip : MonoBehaviour
         shipClass2GO.SetActive(false);
         SniperClass3.transform.position = shipClass2GO.transform.position;
         SniperClass3.transform.rotation = shipClass2GO.transform.rotation;
+        SniperClass3.GetComponent<Rigidbody2D>().velocity = shipClass2GO.GetComponent<Rigidbody2D>().velocity;
         SniperClass3.SetActive(true);
         newShip.SetActive(true);
         playerHealthBar.attachedTo = newShip.transform;
@@ -79,6 +83,7 @@ public class LevelUpShip : MonoBehaviour
         shipClass2GO.SetActive(false);
         SpeedyClass3.transform.position = shipClass2GO.transform.position;
         SpeedyClass3.transform.rotation = shipClass2GO.transform.rotation;
+        SpeedyClass3.GetComponent<Rigidbody2D>().velocity = shipClass2GO.GetComponent<Rigidbody2D>().velocity;
         SpeedyClass3.SetActive(true);
         newShip.SetActive(true);
         playerHealthBar.attachedTo = newShip.transform;
