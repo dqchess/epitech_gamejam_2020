@@ -4824,6 +4824,7 @@ MonoBehaviour:
   fireRate: 0.5
   damage: 0
   parent: {fileID: 155839947889213965}
+  isInPlayer: 0
 --- !u!1 &155839947235003584
 GameObject:
   m_ObjectHideFlags: 0
@@ -6303,6 +6304,7 @@ MonoBehaviour:
   fireRate: 0.5
   damage: 0
   parent: {fileID: 155839947889213965}
+  isInPlayer: 0
 --- !u!1 &210113530985492493
 GameObject:
   m_ObjectHideFlags: 0
@@ -11374,6 +11376,7 @@ MonoBehaviour:
   fireRate: 0.5
   damage: 0
   parent: {fileID: 210113532149758413}
+  isInPlayer: 0
 --- !u!1 &210113531402270674
 GameObject:
   m_ObjectHideFlags: 0
@@ -11387,7 +11390,7 @@ GameObject:
   - component: {fileID: 3983257039552911924}
   m_Layer: 8
   m_Name: Ship2.0
-  m_TagString: Untagged
+  m_TagString: PlayerShip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11430,6 +11433,10 @@ MonoBehaviour:
   maxHp: 200
   damage: 100
   miningValue: 10
+  attackCoeff: 1
+  fireRateCoeff: 1
+  moveSpeedCoeff: 1
+  shotSpeedCoeff: 1
 --- !u!114 &3983257039552911924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11772,6 +11779,7 @@ MonoBehaviour:
   fireRate: 0.5
   damage: 0
   parent: {fileID: 155839947889213965}
+  isInPlayer: 0
 --- !u!1 &210113531688151478
 GameObject:
   m_ObjectHideFlags: 0
@@ -12170,6 +12178,7 @@ MonoBehaviour:
   fireRate: 0.5
   damage: 0
   parent: {fileID: 210113532149758413}
+  isInPlayer: 0
 --- !u!1 &210113531847011754
 GameObject:
   m_ObjectHideFlags: 0
@@ -12249,7 +12258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &210113531921446764
 Transform:
   m_ObjectHideFlags: 0
@@ -12338,6 +12347,7 @@ MonoBehaviour:
   fireRate: 0.5
   damage: 0
   parent: {fileID: 210113532149758413}
+  isInPlayer: 0
 --- !u!1 &210113532149758413
 GameObject:
   m_ObjectHideFlags: 0
@@ -24196,6 +24206,7 @@ MonoBehaviour:
   fireRate: 0.5
   damage: 0
   parent: {fileID: 3831580604792907615}
+  isInPlayer: 0
 --- !u!1 &3015976971778550197
 GameObject:
   m_ObjectHideFlags: 0
@@ -24316,7 +24327,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4422800847024549838
 Transform:
   m_ObjectHideFlags: 0
@@ -24405,6 +24416,7 @@ MonoBehaviour:
   fireRate: 0.5
   damage: 0
   parent: {fileID: 1450227368066746386}
+  isInPlayer: 0
 --- !u!1 &3261790333782464166
 GameObject:
   m_ObjectHideFlags: 0
@@ -24522,7 +24534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &411329549690656309
 Transform:
   m_ObjectHideFlags: 0
@@ -24611,6 +24623,7 @@ MonoBehaviour:
   fireRate: 0.5
   damage: 0
   parent: {fileID: 3831580604792907615}
+  isInPlayer: 0
 --- !u!1 &3831580604792907615
 GameObject:
   m_ObjectHideFlags: 0
@@ -25621,7 +25634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8091869402483959613
 Transform:
   m_ObjectHideFlags: 0
@@ -31208,6 +31221,7 @@ MonoBehaviour:
   fireRate: 0.5
   damage: 0
   parent: {fileID: 1450227368066746386}
+  isInPlayer: 0
 --- !u!1 &7639468108799376543
 GameObject:
   m_ObjectHideFlags: 0
@@ -31504,6 +31518,7 @@ MonoBehaviour:
   fireRate: 0.5
   damage: 0
   parent: {fileID: 3831580604792907615}
+  isInPlayer: 0
 --- !u!1 &8006599269548204737
 GameObject:
   m_ObjectHideFlags: 0
@@ -41080,6 +41095,7 @@ MonoBehaviour:
   fireRate: 0.5
   damage: 0
   parent: {fileID: 1450227368066746386}
+  isInPlayer: 0
 --- !u!1 &8737757914495687659
 GameObject:
   m_ObjectHideFlags: 0
