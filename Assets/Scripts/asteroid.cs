@@ -39,7 +39,8 @@ public class asteroid : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-   
+        if (GetComponent<CircleCollider2D>().isTrigger == true)
+            return;
         if (transform.position.x < -21 || transform.position.x > 21)
         {
             Destroy(this.gameObject);
