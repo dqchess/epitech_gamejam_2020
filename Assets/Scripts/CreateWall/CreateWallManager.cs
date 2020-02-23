@@ -36,7 +36,6 @@ public class CreateWallManager : MonoBehaviour
 
     void Start()
     {
-        setUpPreShow();
     }
 
 
@@ -51,10 +50,12 @@ public class CreateWallManager : MonoBehaviour
             spriteRenderers[i].color = colours[i];
             collider2d[i].isTrigger = false;
             FindObjectOfType<SoundManagers>().Play("create_wall");
-
+          
 
         }
-        setUpPreShow();
+
+        preshow = null;
+
     }
     void Update()
     {
@@ -77,14 +78,14 @@ public class CreateWallManager : MonoBehaviour
         
     }
 
-    void deactivate()
+    public void deactivate()
     {
         FindObjectOfType<SoundManagers>().Play("toggle_wall_deactivate");
         Destroy(preshow);
         preshow = null;
     }
 
-       void activate()
+    public void activate()
     {
 
         FindObjectOfType<SoundManagers>().Play("toggle_wall_activate");
