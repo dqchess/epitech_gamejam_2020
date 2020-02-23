@@ -11367,6 +11367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 210113531402270677}
   - component: {fileID: 4506794026494814795}
+  - component: {fileID: 3983257039552911924}
   m_Layer: 8
   m_Name: Ship2.0
   m_TagString: Untagged
@@ -11411,6 +11412,22 @@ MonoBehaviour:
   health: 100
   damage: 100
   miningValue: 10
+--- !u!114 &3983257039552911924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210113531402270674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4f3c3b3cdf2ae47a3d9bd02595626b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intialShip: {fileID: 155839947889213965}
+  DestroyerClass3: {fileID: 2809633758696132072}
+  SniperClass3: {fileID: 734666185737964026}
+  SpeedyClass3: {fileID: 2552321138495758789}
 --- !u!1 &210113531503390376
 GameObject:
   m_ObjectHideFlags: 0
