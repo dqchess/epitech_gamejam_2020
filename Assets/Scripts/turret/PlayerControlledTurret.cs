@@ -4,6 +4,8 @@ using System.Collections;
 public class PlayerControlledTurret : MonoBehaviour {
 
 	public string shootTouchName;
+    public int nbShots = 1;
+
 	public bool lockTurret;
 	public GameObject weapon_prefab;
 	public GameObject[] barrel_hardpoints;
@@ -28,15 +30,17 @@ public class PlayerControlledTurret : MonoBehaviour {
 			transform.rotation = Quaternion.Euler (new Vector3(0, 0, Mathf.LerpAngle(transform.rotation.eulerAngles.z, (Mathf.Atan2 (direction.y,direction.x) * Mathf.Rad2Deg) - 90f, turret_rotation_speed * Time.deltaTime)));
 
 		if (Input.GetButtonDown(shootTouchName) && barrel_hardpoints != null && nextFire >= fireRate) {
-			GameObject bullet = (GameObject) Instantiate(weapon_prefab, barrel_hardpoints[barrel_index].transform.position, transform.rotation);
-			bullet.GetComponent<Rigidbody2D>().AddForce(bullet.transform.up * shot_speed);
-			bullet.GetComponent<Projectile>().firing_ship = parent;
-			bullet.GetComponent<Projectile>().damage = damage;
+			for (int i = 0; i < nbShots; i++) {
+				GameObject bullet = (GameObject) Instantiate(weapon_prefab, barrel_hardpoints[barrel_index].transform.position, transform.rotation);
+				bullet.GetComponent<Rigidbody2D>().AddForce(bullet.transform.up * shot_speed);
+				bullet.GetComponent<Projectile>().firing_ship = parent;
+				bullet.GetComponent<Projectile>().damage = damage;
 
-			barrel_index++;
-			if (barrel_index >= barrel_hardpoints.Length)
-				barrel_index = 0;
-			nextFire = 0;
+				barrel_index++;
+				if (barrel_index >= barrel_hardpoints.Length)
+					barrel_index = 0;
+				nextFire = 0;
+			}
 		}
 		if (nextFire < fireRate)
 			nextFire += Time.deltaTime;
