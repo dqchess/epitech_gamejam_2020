@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 8423796697813448552}
   - component: {fileID: -1124687419502731857}
   - component: {fileID: 3874923308706619630}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Turret T3
   m_TagString: team2
   m_Icon: {fileID: 0}
@@ -172,6 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 300
   maxHp: 300
+  healthBar: {fileID: 0}
   regenAmount: 5
 --- !u!58 &3874923308706619630
 CircleCollider2D:

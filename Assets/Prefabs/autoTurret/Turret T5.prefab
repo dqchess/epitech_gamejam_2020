@@ -139,6 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 1000
   maxHp: 1000
+  healthBar: {fileID: 0}
   regenAmount: 10
 --- !u!58 &8206245653561909299
 CircleCollider2D:

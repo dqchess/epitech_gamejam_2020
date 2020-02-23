@@ -410,8 +410,9 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 2
-  damage: 8
+  damage: 10
   parent: {fileID: 0}
+  isInPlayer: 0
 --- !u!1 &5705045835679527352
 GameObject:
   m_ObjectHideFlags: 0

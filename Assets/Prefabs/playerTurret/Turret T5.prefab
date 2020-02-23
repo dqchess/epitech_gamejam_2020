@@ -116,6 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 1000
   maxHp: 1000
+  healthBar: {fileID: 0}
   regenAmount: 10
 --- !u!58 &8206245653561909299
 CircleCollider2D:
@@ -154,8 +155,9 @@ MonoBehaviour:
   turret_rotation_speed: 1
   shot_speed: 355
   fireRate: 3
-  damage: 70
+  damage: 80
   parent: {fileID: 0}
+  isInPlayer: 0
 --- !u!1 &5636610998243735402
 GameObject:
   m_ObjectHideFlags: 0
