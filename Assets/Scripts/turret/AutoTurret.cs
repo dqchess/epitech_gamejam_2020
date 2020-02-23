@@ -51,6 +51,9 @@ public class AutoTurret : MonoBehaviour
 		    Vector3 direction = targetpos - turretPosition;
 		    transform.rotation = Quaternion.Euler (new Vector3(0, 0, Mathf.LerpAngle(transform.rotation.eulerAngles.z, (Mathf.Atan2 (direction.y,direction.x) * Mathf.Rad2Deg) - 90f, turret_rotation_speed * Time.deltaTime)));
             RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 10f, (LayerMask.GetMask("CanHit")));
+            Debug.DrawRay(transform.position, direction, Color.red);
+            if (hit.collider != null)
+                Debug.Log(hit.collider.name);
             if (hit.collider != null && hit.collider.gameObject.layer == 8 && hit.collider.gameObject != gameObject && barrel_hardpoints != null && nextFire >= fireRate) {
                 for (int i = 0; i < nbShots; i++) {
                     GameObject bullet = (GameObject) Instantiate(weapon_prefab, barrel_hardpoints[barrel_index].transform.position, transform.rotation);
