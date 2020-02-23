@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 881636137558035782}
   - component: {fileID: -3159260204745752921}
   - component: {fileID: 1558815855313856159}
+  - component: {fileID: -6976054897429578693}
   m_Layer: 8
   m_Name: Asteroid 1
   m_TagString: Asteroid
@@ -97,7 +98,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 40
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -182,3 +183,15 @@ PolygonCollider2D:
       - {x: 0.27211857, y: -0.2718966}
       - {x: 0.3499999, y: -0.124112606}
       - {x: 0.33423615, y: 0.03189659}
+--- !u!114 &-6976054897429578693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881636137558035783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b27d0ef8b05c7809fa396b3771b221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

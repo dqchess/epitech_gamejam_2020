@@ -99,3 +99,23 @@ MonoBehaviour:
     volume: 0.55
     pitch: 1.26
     source: {fileID: 0}
+  - name: faill_action
+    clip: {fileID: 8300000, guid: ee4a50d93d868215aa912503dc8d1abf, type: 3}
+    volume: 0.55
+    pitch: 1.26
+    source: {fileID: 0}
+  - name: create_wall
+    clip: {fileID: 8300000, guid: ddd6073d04e5c7242b9908da9e6f3bd3, type: 3}
+    volume: 0.55
+    pitch: 1.26
+    source: {fileID: 0}
+  - name: toggle_wall_activate
+    clip: {fileID: 8300000, guid: 093f5fc49708d36ad8582e4849db80d1, type: 3}
+    volume: 0.55
+    pitch: 1.26
+    source: {fileID: 0}
+  - name: toggle_wall_deactivate
+    clip: {fileID: 8300000, guid: 6d4a28ef73dc6f4b98cfca42551001c7, type: 3}
+    volume: 0.55
+    pitch: 1.26
+    source: {fileID: 0}
