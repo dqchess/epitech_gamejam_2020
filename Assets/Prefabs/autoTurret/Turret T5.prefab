@@ -104,7 +104,7 @@ MonoBehaviour:
   target: {fileID: 0}
   turret_rotation_speed: 1
   shot_speed: 355
-  fireRate: 5
+  fireRate: 4
   hasTarget: 0
   parent: {fileID: 0}
   nbShots: 1
@@ -137,8 +137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 361e25e98a0a15c4294dc518e5a33756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 1000
-  maxHp: 1000
+  hp: 1500
+  maxHp: 1500
   healthBar: {fileID: 0}
   regenAmount: 10
   slayer: {fileID: 0}
