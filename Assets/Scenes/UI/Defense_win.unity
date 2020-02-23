@@ -382,31 +382,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1030131288}
     m_Modifications:
-    - target: {fileID: 8989723354967824068, guid: f09210e5d91acfe449a8209d229134fc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 65
-      objectReference: {fileID: 0}
-    - target: {fileID: 8989723355684963356, guid: f09210e5d91acfe449a8209d229134fc,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.078431375
-      objectReference: {fileID: 0}
-    - target: {fileID: 8989723355684963356, guid: f09210e5d91acfe449a8209d229134fc,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.050980393
-      objectReference: {fileID: 0}
-    - target: {fileID: 8989723355684963356, guid: f09210e5d91acfe449a8209d229134fc,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.27450982
-      objectReference: {fileID: 0}
-    - target: {fileID: 8989723355746406497, guid: f09210e5d91acfe449a8209d229134fc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 65
-      objectReference: {fileID: 0}
     - target: {fileID: 8989723356687740198, guid: f09210e5d91acfe449a8209d229134fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -516,11 +491,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DefenseWin
-      objectReference: {fileID: 0}
-    - target: {fileID: 8989723356949605632, guid: f09210e5d91acfe449a8209d229134fc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 65
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f09210e5d91acfe449a8209d229134fc, type: 3}
