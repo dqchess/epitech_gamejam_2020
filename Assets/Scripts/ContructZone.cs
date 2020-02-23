@@ -30,7 +30,7 @@ public class ContructZone : MonoBehaviour
     private void OnMouseDown()
     {
         if (Input.GetButtonDown("Fire1"))
-            createTurret(0);
+            transform.GetChild(0).gameObject.SetActive(true);
     }
 
     public void createTurret(int num)

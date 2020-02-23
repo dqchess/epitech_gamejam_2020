@@ -52,7 +52,7 @@ public class SkillBox : MonoBehaviour
             Transform priceGameObject = transform.GetChild(2);
             if (priceGameObject.gameObject.activeSelf)
             {
-                if (currentLevel > skill.maxLevel)
+                if (currentLevel >= skill.maxLevel)
                 {
                     priceGameObject.gameObject.SetActive(false);
                 } else

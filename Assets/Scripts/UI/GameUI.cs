@@ -28,6 +28,7 @@ public class GameUI : MonoBehaviour
     public Transform attackSideParent;
     public Transform defenseSideParent;
     public Text attackCrystalCount;
+    public Text defenseCrystalCount;
 
     [SerializeField]
     List<SkillBox> attackSkillBoxes = new List<SkillBox>();
@@ -62,6 +63,7 @@ public class GameUI : MonoBehaviour
                 attackBox.skill.Upgrade();
         }
         attackCrystalCount.text = ((int)(AttackerStats.instance.crystals)).ToString();
+        defenseCrystalCount.text = ((int)(Defenser.instance.crystals)).ToString();
     }
 
     public void UpdateSkillLevel(Skill skillUpgraded)
