@@ -23,7 +23,7 @@ public class HealthBar : MonoBehaviour
 
     void Update()
     {
-        transform.position = Camera.main.WorldToScreenPoint(attachedTo.transform.position);
+        // transform.position = Camera.main.WorldToScreenPoint(attachedTo.transform.position);
         transform.position = new Vector3(transform.position.x, transform.position.y + topOffset, transform.position.z);
     }
 

@@ -8,11 +8,11 @@ public class PlayerDamageable : DamageableObj
     {
         hp -= damage;
         Debug.Log(name + " has taken " + damage + " damage, it now has " + hp + " health points !");
-        AttackerStats.instance.health -= damage;
-        if (AttackerStats.instance.health <= 0)
+        AttackerStats.instance.hp -= damage;
+        if (AttackerStats.instance.hp <= 0)
         {
             hp = 0;
-            AttackerStats.instance.health = 0;
+            AttackerStats.instance.hp = 0;
             Debug.Log(name + " is dead.");
             Destroy(gameObject);
         }

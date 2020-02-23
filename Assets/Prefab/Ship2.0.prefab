@@ -5158,6 +5158,7 @@ GameObject:
   - component: {fileID: 155839947889213967}
   - component: {fileID: 155839947889213966}
   - component: {fileID: 4598800328816066655}
+  - component: {fileID: 7732676459521846797}
   m_Layer: 8
   m_Name: Ship_1
   m_TagString: Player
@@ -5326,6 +5327,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49920a2fb71bb660d958ad69f1f36453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7732676459521846797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155839947889213965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8793d5c1f33d04e9b941e3e40329f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  maxHp: 0
+  regenAmount: 0
 --- !u!1 &210113530302851610
 GameObject:
   m_ObjectHideFlags: 0
