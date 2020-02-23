@@ -56,7 +56,7 @@ public class LevelUpShip : MonoBehaviour
             newShip.transform.GetChild(1).gameObject.SetActive(true);
         else if (lvlShip == 2)
             newShip.transform.GetChild(2).gameObject.SetActive(true);
-        else if (lvlShip == 2)
+        else if (lvlShip == 3)
             newShip.transform.GetChild(3).gameObject.SetActive(true);
         shipClass2GO = newShip;
         shipClass2 = newShip.name;
