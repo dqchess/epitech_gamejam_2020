@@ -7,13 +7,17 @@ using UnityEngine.Events;
 public class SkillBox : MonoBehaviour
 {
     public Skill skill;
+    public bool canBuy;
     public GameObject skillPointPrefab;
     int currentLevel;
     List<Color> colors = new List<Color>();
+    private Text priceText;
 
     public List<UnityEvent> upgradeEvents = new List<UnityEvent>();
     void Start()
     {
+        priceText = transform.GetChild(2).GetChild(0).GetComponent<Text>();
+        canBuy = false;
         colors.Add(new Color(0, 0, 255));
         colors.Add(new Color(255, 255, 0));
         colors.Add(new Color(255, 0, 0));
@@ -34,19 +38,32 @@ public class SkillBox : MonoBehaviour
         }
         if (skill.price.Count == skill.maxLevel)
         {
-            transform.GetChild(2).GetChild(0).GetComponent<Text>().text = skill.price[0].ToString();
+            priceText.text = skill.price[0].ToString();
             transform.GetChild(2).gameObject.SetActive(true);
         }
     }
 
     void Update()
     {
-        
+        if (skill.price.Count > currentLevel)
+        {
+            if (canBuy == false && AttackerStats.instance.crystals >= skill.price[currentLevel])
+            {
+                canBuy = true;
+                priceText.color = new Color(0, 255, 0);
+            }
+            else if (canBuy == true && AttackerStats.instance.crystals < skill.price[currentLevel])
+            {
+                canBuy = false;
+                priceText.color = new Color(255, 0, 0);
+            }
+        }
     }
     public void UpdateSkillLevel()
     {
-        if (skill.maxLevel > currentLevel)
+        if (skill.maxLevel > currentLevel && skill.price.Count > currentLevel && AttackerStats.instance.crystals >= skill.price[currentLevel])
         {
+            AttackerStats.instance.crystals -= skill.price[currentLevel];
             currentLevel += 1;
             skill.currentLevel = currentLevel;
             Transform priceGameObject = transform.GetChild(2);
@@ -57,7 +74,7 @@ public class SkillBox : MonoBehaviour
                     priceGameObject.gameObject.SetActive(false);
                 } else
                 {
-                    priceGameObject.GetChild(0).GetComponent<Text>().text = skill.price[currentLevel].ToString();
+                    priceText.text = skill.price[currentLevel].ToString();
                 }
             }
             skill.SkillUpgraded(currentLevel);
