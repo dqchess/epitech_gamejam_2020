@@ -23,9 +23,16 @@ public class PlayerControlledTurret : MonoBehaviour
 
     void playSound(string name)
     {
-        if (name == "Projectile Sharp 1")
+        switch (name)
         {
-            FindObjectOfType<SoundManagers>().Play("laserShot");
+            case "Projectile Sharp 1":
+                FindObjectOfType<SoundManagers>().Play("laserShot");
+                break;
+            case "Projectile Sharp":
+                FindObjectOfType<SoundManagers>().Play("tower_shot_part_1");
+                break;
+            default:
+                break;
         }
 
     }

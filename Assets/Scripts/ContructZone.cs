@@ -5,11 +5,13 @@ using UnityEngine;
 public class ContructZone : MonoBehaviour
 {
     // Start is called before the first frame update
-    private GameObject turret;
+    public GameObject [] turret;
     bool canBuild;
+    public Transform [] zones;
     void Start()
     {
         canBuild = false;
+        turret = new GameObject [zones.Length];
     }
 
     private void OnMouseEnter()
@@ -28,32 +30,34 @@ public class ContructZone : MonoBehaviour
     private void OnMouseDown()
     {
         if (Input.GetButtonDown("Fire1"))
-            createTurret();
+            createTurret(0);
     }
 
-    public void createTurret()
+    public void createTurret(int num)
     {
-        if (turret != null)
+        if (turret[num] != null)
         {
             Debug.Log("too many turret");
             return;
         }
         GameObject turretToBuild = BuildManager.instance.actualTurret;
         turretToBuild.GetComponent<AutoTurret>().parent = transform.parent.gameObject;
-        turret =(GameObject)Instantiate(turretToBuild, transform.position, transform.rotation, transform);
+        turret[num] =(GameObject)Instantiate(turretToBuild, zones[num].position, transform.rotation, transform);
     }
 
-    void destroyTurret()
+    void destroyTurret(int num)
     {
         Debug.Log("Destroy");
-        if (turret)
-            Destroy(turret);
+        if (turret[num]) {
+            Destroy(turret[num]);
+            turret[num] = null;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Fire2") && canBuild)
-            destroyTurret();
+            destroyTurret(0);
     }
 }

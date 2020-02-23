@@ -50,8 +50,8 @@ MonoBehaviour:
     pitch: 1.26
     source: {fileID: 0}
   - name: laserShot
-    clip: {fileID: 8300000, guid: 10dd6f147052c5f4d99e975a91437b9b, type: 3}
-    volume: 0.27
+    clip: {fileID: 8300000, guid: db08ac30e179bf349ab5e9ee40f727f9, type: 3}
+    volume: 0.07
     pitch: 1.26
     source: {fileID: 0}
   - name: ship_rocket_part1
@@ -82,5 +82,20 @@ MonoBehaviour:
   - name: tower_shot_roquette
     clip: {fileID: 8300000, guid: 0838d976962ea47488c69af4f1f7cab0, type: 3}
     volume: 0.27
+    pitch: 1.26
+    source: {fileID: 0}
+  - name: shield-down
+    clip: {fileID: 8300000, guid: 4b295831f57fdb74893d11e52046492d, type: 3}
+    volume: 0.55
+    pitch: 1.26
+    source: {fileID: 0}
+  - name: level_up
+    clip: {fileID: 8300000, guid: 067cb40e663af264da50a9c1aaa19e33, type: 3}
+    volume: 0.55
+    pitch: 1.26
+    source: {fileID: 0}
+  - name: shield-up
+    clip: {fileID: 8300000, guid: ddd6073d04e5c7242b9908da9e6f3bd3, type: 3}
+    volume: 1
     pitch: 1.26
     source: {fileID: 0}
