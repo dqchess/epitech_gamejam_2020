@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &734043923
 Transform:
   m_ObjectHideFlags: 0
@@ -42,10 +42,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -56,7 +56,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 2, y: 3}
   m_EdgeRadius: 0
 --- !u!114 &734043925
 MonoBehaviour:
@@ -88,7 +88,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1683483434
 Transform:
   m_ObjectHideFlags: 0
@@ -113,10 +113,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -127,7 +127,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 2, y: 3}
   m_EdgeRadius: 0
 --- !u!114 &1683483436
 MonoBehaviour:
@@ -159,7 +159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1782840294
 Transform:
   m_ObjectHideFlags: 0
@@ -184,10 +184,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -198,7 +198,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 3, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &1782840296
 MonoBehaviour:
@@ -230,7 +230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1803805630
 Transform:
   m_ObjectHideFlags: 0
@@ -255,10 +255,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -1, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -269,7 +269,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 3, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &1803805632
 MonoBehaviour:
@@ -383,6 +383,7 @@ MonoBehaviour:
   - {fileID: 2678128906985777376, guid: 98b5acbc96807df49a25b79218355ea0, type: 3}
   - {fileID: 2843768048515071599, guid: e921a027d5397584481833432a533e09, type: 3}
   - {fileID: 206329058886302332, guid: a317f72e307436647acd158b2a7ac8fb, type: 3}
+  - {fileID: 5636610997964652756, guid: b47ed8effd46bc44d904f77c86619ea2, type: 3}
   - {fileID: 8423091433185790087, guid: 760260f9c918118499747d7beef319be, type: 3}
   actualTurret: {fileID: 0}
 --- !u!1 &7506341392942377339
@@ -730,6 +731,7 @@ GameObject:
   - component: {fileID: 7506341393848852214}
   - component: {fileID: 7506341393848852215}
   - component: {fileID: 7506341393848852212}
+  - component: {fileID: 201444718}
   m_Layer: 8
   m_Name: Station
   m_TagString: team2
@@ -839,6 +841,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crystals: 0
   gain: 5
+--- !u!114 &201444718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7506341393848852208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361e25e98a0a15c4294dc518e5a33756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 1000
+  maxHp: 1000
+  healthBar: {fileID: 0}
+  regenAmount: 0
 --- !u!1 &7506341394004848004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,6 +1126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 50
   maxHp: 50
+  healthBar: {fileID: 0}
   regenAmount: 0
   reloadTime: 15
   shield: {fileID: 7506341394156982038}

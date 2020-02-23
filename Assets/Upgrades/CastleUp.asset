@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: CastleUp
   m_EditorClassIdentifier: 
   skillName: CastleUp
-  icon: {fileID: -8291126335545079962, guid: 1314bda8c95e23c409bb8be32c983ed6, type: 3}
+  icon: {fileID: -4841198759364821401, guid: 1314bda8c95e23c409bb8be32c983ed6, type: 3}
   maxLevel: 5
   levelThreshold: 5
-  price: 
+  price: 6400000020030000dc050000b80b000088130000
   hasInput: 0
   input: 0
   inputName: 

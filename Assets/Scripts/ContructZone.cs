@@ -45,6 +45,22 @@ public class ContructZone : MonoBehaviour
         turret[num] =(GameObject)Instantiate(turretToBuild, zones[num].position, transform.rotation, transform);
     }
 
+    public void upgradeTurret(int num)
+    {
+        if (turret[num]) {
+            Destroy(turret[num]);
+            turret[num] = null;
+        }
+        if (turret[num] != null)
+        {
+            Debug.Log("too many turret");
+            return;
+        }
+        GameObject turretToBuild = BuildManager.instance.actualTurret;
+        turretToBuild.GetComponent<AutoTurret>().parent = transform.parent.gameObject;
+        turret[num] =(GameObject)Instantiate(turretToBuild, zones[num].position, transform.rotation, transform);
+    }
+
     void destroyTurret(int num)
     {
         Debug.Log("Destroy");

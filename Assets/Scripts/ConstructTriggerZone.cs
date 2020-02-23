@@ -5,7 +5,7 @@ using UnityEngine;
 public class ConstructTriggerZone : MonoBehaviour
 {
     public GameObject bubble;
-    private void OnMouseOver()
+    private void OnMouseEnter()
     {
         bubble.SetActive(true);
     }
