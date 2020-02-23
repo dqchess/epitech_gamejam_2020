@@ -43,6 +43,8 @@ public class LevelUpShip : MonoBehaviour
 
     public void LevelUpshipClass2(GameObject newShip) {
         intialShip.SetActive(false);
+        newShip.transform.position = intialShip.transform.position;
+        newShip.transform.rotation = intialShip.transform.rotation;
         newShip.SetActive(true);
         shipClass2GO = newShip;
         shipClass2 = newShip.name;
@@ -53,6 +55,8 @@ public class LevelUpShip : MonoBehaviour
 
     public void LevelUpShipDestroyerClass3(GameObject newShip) {
         shipClass2GO.SetActive(false);
+        DestroyerClass3.transform.position = shipClass2GO.transform.position;
+        DestroyerClass3.transform.rotation = shipClass2GO.transform.rotation;
         DestroyerClass3.SetActive(true);
         newShip.SetActive(true);
         playerHealthBar.attachedTo = newShip.transform;
@@ -62,6 +66,8 @@ public class LevelUpShip : MonoBehaviour
 
     public void LevelUpShipSniperClass3(GameObject newShip) {
         shipClass2GO.SetActive(false);
+        SniperClass3.transform.position = shipClass2GO.transform.position;
+        SniperClass3.transform.rotation = shipClass2GO.transform.rotation;
         SniperClass3.SetActive(true);
         newShip.SetActive(true);
         playerHealthBar.attachedTo = newShip.transform;
@@ -71,6 +77,8 @@ public class LevelUpShip : MonoBehaviour
 
     public void LevelUpShipSpeedyClass3(GameObject newShip) {
         shipClass2GO.SetActive(false);
+        SpeedyClass3.transform.position = shipClass2GO.transform.position;
+        SpeedyClass3.transform.rotation = shipClass2GO.transform.rotation;
         SpeedyClass3.SetActive(true);
         newShip.SetActive(true);
         playerHealthBar.attachedTo = newShip.transform;
