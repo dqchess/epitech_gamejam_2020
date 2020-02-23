@@ -544,6 +544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turret: []
   zones: []
+  skillBox: []
 --- !u!65 &7506341393235344150
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -719,6 +720,11 @@ MonoBehaviour:
   - {fileID: 7506341393235344151}
   - {fileID: 7506341394259640170}
   - {fileID: 7506341394902912081}
+  skillBox:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &7506341393848852208
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,6 +863,9 @@ MonoBehaviour:
   maxHp: 1000
   healthBar: {fileID: 0}
   regenAmount: 0
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7506341394004848004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,6 +1075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turret: []
   zones: []
+  skillBox: []
 --- !u!65 &7506341394259640169
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1128,6 +1138,9 @@ MonoBehaviour:
   maxHp: 50
   healthBar: {fileID: 0}
   regenAmount: 0
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
   reloadTime: 15
   shield: {fileID: 7506341394156982038}
 --- !u!58 &7506341394722825821
@@ -1336,6 +1349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turret: []
   zones: []
+  skillBox: []
 --- !u!65 &7506341394902912080
 BoxCollider:
   m_ObjectHideFlags: 0

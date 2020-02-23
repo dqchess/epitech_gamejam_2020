@@ -5,10 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Projectile
-  - Asteroid
   - Laser
   - autoShip
   - team2
+  - Asteroid
+  - PlayerShip
   layers:
   - Default
   - TransparentFX

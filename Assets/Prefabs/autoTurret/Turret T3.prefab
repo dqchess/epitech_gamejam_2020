@@ -174,6 +174,9 @@ MonoBehaviour:
   maxHp: 300
   healthBar: {fileID: 0}
   regenAmount: 5
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!58 &3874923308706619630
 CircleCollider2D:
   m_ObjectHideFlags: 0

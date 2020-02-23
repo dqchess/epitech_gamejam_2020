@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DamageableObj : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class DamageableObj : MonoBehaviour
     public float maxHp;
     public HealthBar healthBar;
     public int regenAmount;
+
+    public UnityEvent onDeath = new UnityEvent();
 
     virtual public void takeDamage(int damage)
     {
@@ -19,20 +22,16 @@ public class DamageableObj : MonoBehaviour
         {
             hp = 0;
             Debug.Log(name + " is dead.");
+            if (onDeath != null)
+                onDeath.Invoke();
             Destroy(gameObject);
         }
     }
-    public void increaseHp(int amount)
+    virtual public void increaseHp(int amount)
     {
         maxHp += amount;
         hp += amount;
         if (healthBar)
             healthBar.SetHealth(maxHp, hp);
-    }
-
-    public void incrasePlayerHp(int amount)
-    {
-        AttackerStats.instance.maxHp += amount;
-        AttackerStats.instance.hp += amount;
     }
 }

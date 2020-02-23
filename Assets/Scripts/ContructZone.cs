@@ -8,6 +8,7 @@ public class ContructZone : MonoBehaviour
     public GameObject [] turret;
     bool canBuild;
     public Transform [] zones;
+    public List<SkillBox> skillBox = new List<SkillBox>();
     void Start()
     {
         canBuild = false;
@@ -58,7 +59,9 @@ public class ContructZone : MonoBehaviour
         }
         GameObject turretToBuild = BuildManager.instance.actualTurret;
         turretToBuild.GetComponent<AutoTurret>().parent = transform.parent.gameObject;
-        turret[num] =(GameObject)Instantiate(turretToBuild, zones[num].position, transform.rotation, transform);
+        GameObject tmp = Instantiate(turretToBuild, zones[num].position, transform.rotation, transform);
+        tmp.GetComponent<DamageableObj>().onDeath.AddListener(skillBox[num].ResetLevel);
+        turret[num] = tmp;
     }
 
     void destroyTurret(int num)

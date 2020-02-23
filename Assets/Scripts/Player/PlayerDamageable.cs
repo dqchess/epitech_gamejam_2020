@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class PlayerDamageable : DamageableObj
 {
-
-    public HealthBar playerHealthBar;
     override public void takeDamage(int damage)
     {
         hp -= damage;
         AttackerStats.instance.hp -= damage;
-        playerHealthBar.SetHealth(AttackerStats.instance.maxHp, AttackerStats.instance.hp);
+        healthBar.SetHealth(AttackerStats.instance.maxHp, AttackerStats.instance.hp);
         Debug.Log(name + " has taken " + damage + " damage, it now has " + AttackerStats.instance.hp + " health points !");
         if (AttackerStats.instance.hp <= 0)
         {
@@ -19,5 +17,13 @@ public class PlayerDamageable : DamageableObj
             Debug.Log(name + " is dead.");
             Destroy(gameObject);
         }
+    }
+
+    override public void increaseHp(int amount)
+    {
+        AttackerStats.instance.hp += amount;
+        AttackerStats.instance.maxHp += amount;
+        if (healthBar)
+            healthBar.SetHealth(maxHp, hp);
     }
 }

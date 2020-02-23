@@ -54,7 +54,9 @@ public class asteroid : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.localPosition.x < left - 10 || transform.localPosition.x > right + 10)
+        if (GetComponent<PolygonCollider2D>().isTrigger == true)
+            return;
+        if (transform.position.x < -21 || transform.position.x > 21)
         {
             Destroy(this.gameObject);
         }

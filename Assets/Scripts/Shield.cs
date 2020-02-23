@@ -18,7 +18,6 @@ public class Shield : DamageableObj
             hp = 0;
             Debug.Log("death");
             isReloading = true;
-
             FindObjectOfType<SoundManagers>().Play("shield-down");
             shield.SetActive(false);
             GetComponent<CircleCollider2D>().enabled = false;
