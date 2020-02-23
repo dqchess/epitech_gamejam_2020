@@ -5161,6 +5161,7 @@ GameObject:
   - component: {fileID: 155839947889213966}
   - component: {fileID: 4598800328816066655}
   - component: {fileID: 4229415684487937582}
+  - component: {fileID: 4281025479028572127}
   m_Layer: 8
   m_Name: Ship_1
   m_TagString: Player
@@ -5341,8 +5342,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 0
   maxHp: 0
+  healthBar: {fileID: 0}
   regenAmount: 0
-  playerHealthBar: {fileID: 0}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4281025479028572127}
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4281025479028572127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155839947889213965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 733a467569ba8b441b29333e82cfbabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathAnim: {fileID: 6202998154373796254, guid: 98a79c5cf1d6db344aef9b1837426039,
+    type: 3}
 --- !u!1 &156219598133391316
 GameObject:
   m_ObjectHideFlags: 0
@@ -11435,6 +11464,7 @@ MonoBehaviour:
   miningValue: 10
   attackCoeff: 1
   fireRateCoeff: 1
+  rotateSpeedCoeff: 1
   moveSpeedCoeff: 1
   shotSpeedCoeff: 1
 --- !u!114 &3983257039552911924
@@ -12363,6 +12393,7 @@ GameObject:
   - component: {fileID: 2419529333925251814}
   - component: {fileID: 3206766303216123107}
   - component: {fileID: 1475275169349614221}
+  - component: {fileID: 1263476505117379200}
   m_Layer: 8
   m_Name: destroyer
   m_TagString: Player
@@ -12547,8 +12578,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 0
   maxHp: 0
+  healthBar: {fileID: 0}
   regenAmount: 0
-  playerHealthBar: {fileID: 0}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1263476505117379200}
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1263476505117379200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210113532149758413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 733a467569ba8b441b29333e82cfbabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathAnim: {fileID: 6202998154373796254, guid: 98a79c5cf1d6db344aef9b1837426039,
+    type: 3}
 --- !u!1 &210113532341970468
 GameObject:
   m_ObjectHideFlags: 0
@@ -13158,6 +13217,7 @@ GameObject:
   - component: {fileID: 8463538172388421627}
   - component: {fileID: 6977400268752551773}
   - component: {fileID: 2599736692773418122}
+  - component: {fileID: 274699510971364738}
   m_Layer: 8
   m_Name: Ship_sniper_3
   m_TagString: Player
@@ -13349,8 +13409,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 0
   maxHp: 0
+  healthBar: {fileID: 0}
   regenAmount: 0
-  playerHealthBar: {fileID: 0}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 274699510971364738}
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &274699510971364738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734666185737964026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 733a467569ba8b441b29333e82cfbabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathAnim: {fileID: 6202998154373796254, guid: 98a79c5cf1d6db344aef9b1837426039,
+    type: 3}
 --- !u!1 &981396480578397750
 GameObject:
   m_ObjectHideFlags: 0
@@ -18332,6 +18420,7 @@ GameObject:
   - component: {fileID: 6783101473251541378}
   - component: {fileID: 6972342006731380033}
   - component: {fileID: 4432143304312564277}
+  - component: {fileID: 3137044333387320328}
   m_Layer: 8
   m_Name: speedy
   m_TagString: Player
@@ -18512,8 +18601,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 0
   maxHp: 0
+  healthBar: {fileID: 0}
   regenAmount: 0
-  playerHealthBar: {fileID: 0}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3137044333387320328}
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3137044333387320328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450227368066746386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 733a467569ba8b441b29333e82cfbabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathAnim: {fileID: 6202998154373796254, guid: 98a79c5cf1d6db344aef9b1837426039,
+    type: 3}
 --- !u!1 &1528172521142767285
 GameObject:
   m_ObjectHideFlags: 0
@@ -23525,6 +23642,7 @@ GameObject:
   - component: {fileID: 2267921551338265060}
   - component: {fileID: 1545918026227619586}
   - component: {fileID: 7448482336055084584}
+  - component: {fileID: 2358909046638387996}
   m_Layer: 8
   m_Name: Ship_speedy_3
   m_TagString: Player
@@ -23720,8 +23838,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 0
   maxHp: 0
+  healthBar: {fileID: 0}
   regenAmount: 0
-  playerHealthBar: {fileID: 0}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2358909046638387996}
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2358909046638387996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2552321138495758789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 733a467569ba8b441b29333e82cfbabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathAnim: {fileID: 6202998154373796254, guid: 98a79c5cf1d6db344aef9b1837426039,
+    type: 3}
 --- !u!1 &2717182459755269617
 GameObject:
   m_ObjectHideFlags: 0
@@ -23906,6 +24052,7 @@ GameObject:
   - component: {fileID: 861687891984130556}
   - component: {fileID: 7000931559043768825}
   - component: {fileID: 7034775147419298178}
+  - component: {fileID: 7261746812368509968}
   m_Layer: 8
   m_Name: Ship_destroyer_3
   m_TagString: Player
@@ -24096,8 +24243,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 0
   maxHp: 0
+  healthBar: {fileID: 0}
   regenAmount: 0
-  playerHealthBar: {fileID: 0}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7261746812368509968}
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7261746812368509968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2809633758696132072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 733a467569ba8b441b29333e82cfbabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathAnim: {fileID: 6202998154373796254, guid: 98a79c5cf1d6db344aef9b1837426039,
+    type: 3}
 --- !u!1 &2821257775356187148
 GameObject:
   m_ObjectHideFlags: 0
@@ -24639,6 +24814,7 @@ GameObject:
   - component: {fileID: 2999731550748398800}
   - component: {fileID: 7196124632115807943}
   - component: {fileID: 771402943616332437}
+  - component: {fileID: 2019046838555838014}
   m_Layer: 8
   m_Name: sniper
   m_TagString: Player
@@ -24839,8 +25015,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 0
   maxHp: 0
+  healthBar: {fileID: 0}
   regenAmount: 0
-  playerHealthBar: {fileID: 0}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2019046838555838014}
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2019046838555838014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3831580604792907615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 733a467569ba8b441b29333e82cfbabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathAnim: {fileID: 6202998154373796254, guid: 98a79c5cf1d6db344aef9b1837426039,
+    type: 3}
 --- !u!1 &3961516976803503615
 GameObject:
   m_ObjectHideFlags: 0
