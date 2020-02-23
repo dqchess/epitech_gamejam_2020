@@ -10,11 +10,26 @@ public class asteroid : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 screenBounds;
 
+    private float up;
+    private float down;
+    private float left;
+    private float right;
+
 
     // Use this for initialization
     void Start()
     {
-        if (transform.position.x >= 16)
+        Vector3 upLeft = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height, 0));
+        Vector3 downLeft = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));
+        Vector3 downRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0));
+
+
+        up = upLeft.y;
+        down = downRight.y;
+        left = downLeft.x;
+        right = downRight.x;
+
+        if (transform.localPosition.x >= right)
         {
 
             dirX = Random.Range(-0.5f, 0.0f);
@@ -23,7 +38,7 @@ public class asteroid : MonoBehaviour
         {
             dirX = Random.Range(0.0f, 0.5f);
         }
-        if (transform.position.y >= 9)
+        if (transform.localPosition.y >= up)
         {
             dirY = Random.Range(-0.5f, 0.0f);
         }
@@ -45,14 +60,14 @@ public class asteroid : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        if (transform.position.y < -13 || transform.position.y > 13)
+        if (transform.localPosition.y < down - 10 || transform.localPosition.y > up + 10)
         {
             Destroy(this.gameObject);
         }
     }
     void OnCollisionEnter2D(Collision2D other)
     {
-        // FindObjectOfType<SoundManagers>().Play("Impact_Asteroid");
+        FindObjectOfType<SoundManagers>().Play("Impact_Asteroid");
 
     }
 

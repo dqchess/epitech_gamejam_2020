@@ -43,9 +43,12 @@ GameObject:
   - component: {fileID: 756085353740750080}
   - component: {fileID: 756085353740750081}
   - component: {fileID: 756085353740750111}
+  - component: {fileID: -6169316539643841621}
+  - component: {fileID: 1776830976051706654}
+  - component: {fileID: 5666164456486911127}
   m_Layer: 0
   m_Name: Turret T1
-  m_TagString: Untagged
+  m_TagString: team2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,6 +157,53 @@ CircleCollider2D:
   m_Offset: {x: -0.00000023841858, y: 0.00000025331974}
   serializedVersion: 2
   m_Radius: 7.82
+--- !u!114 &-6169316539643841621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756085353740750109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361e25e98a0a15c4294dc518e5a33756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  maxHp: 100
+  regenAmount: 2
+--- !u!58 &1776830976051706654
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756085353740750109}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.175
+--- !u!58 &5666164456486911127
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756085353740750109}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.175
 --- !u!1 &756085355525786052
 GameObject:
   m_ObjectHideFlags: 0

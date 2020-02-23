@@ -15,7 +15,6 @@ public class Skill : ScriptableObject
     public KeyCode input;
     public string inputName;
     public int currentLevel = 0;
-    public List<UnityEvent> upgradeEvents = new List<UnityEvent>();
 
     public void Upgrade()
     {
@@ -25,7 +24,5 @@ public class Skill : ScriptableObject
     public void SkillUpgraded(int level)
     {
         currentLevel = level;
-        if (upgradeEvents.Count > level && upgradeEvents[currentLevel - 1] != null)
-            upgradeEvents[currentLevel - 1].Invoke();
     }
 }
