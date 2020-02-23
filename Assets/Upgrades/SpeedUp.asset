@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: SpeedUp
   icon: {fileID: -3549551042460642170, guid: 1314bda8c95e23c409bb8be32c983ed6, type: 3}
-  maxLevel: 6
-  levelThreshold: 3
-  price: 64000000
+  maxLevel: 5
+  levelThreshold: 5
+  price: 640000002c010000f4010000e8030000d0070000
   hasInput: 1
   input: 50
   inputName: 2
-  currentLevel: 6
+  currentLevel: 0

@@ -21,7 +21,9 @@ public class shipSpawner : MonoBehaviour
         for (int i = 0; i < amount; i++)
         {
             GameObject tmp = Instantiate(ships[level], spawnPoints[Random.Range(0, 4)].position,Quaternion.identity, transform);
-            tmp.GetComponent<AIDestinationSetter>().target = player.transform;
+            // tmp.GetComponent<AIDestinationSetter>().target = player.transform;
+            tmp.GetComponent<scanCollide>().parentShip = player;
+            tmp.GetComponent<scanCollide>().GetPlayer();
         }
     }
     public void changeAmount(int num)
