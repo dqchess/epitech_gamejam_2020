@@ -96,6 +96,23 @@ public class SkillBox : MonoBehaviour
 
     public void ResetLevel()
     {
+        Debug.Log("Reset " + name);
         currentLevel = 0;
+        for (int i = 0; i < skill.levelThreshold; i++)
+        {
+            transform.GetChild(1).GetChild(i).GetComponent<Image>().color = new Color(0, 0, 0);
+        }
+        Transform priceGameObject = transform.GetChild(2);
+        if (priceGameObject.gameObject.activeSelf)
+        {
+            if (currentLevel >= skill.maxLevel)
+            {
+                priceGameObject.gameObject.SetActive(false);
+            }
+            else
+            {
+                priceText.text = skill.price[currentLevel].ToString();
+            }
+        }
     }
 }
