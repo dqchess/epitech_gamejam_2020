@@ -14,8 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   className: Speedy
   classImage: {fileID: 21300000, guid: bf51d33384664244f9aca0e60aa77968, type: 3}
-  input: 259
+  input: 51
   inputName: 3
-  choiceCallback:
-    m_PersistentCalls:
-      m_Calls: []

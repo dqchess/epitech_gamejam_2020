@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a601d37246a4ed04db104ae9064d8aa9, type: 3}
-  m_Name: Destroyer
+  m_Name: Speedy_3_3
   m_EditorClassIdentifier: 
-  className: Destroyer
-  classImage: {fileID: 21300000, guid: c9c1ba13981fc924e83b4ca781c983b4, type: 3}
-  input: 49
-  inputName: 1
+  className: Speedy
+  classImage: {fileID: 21300000, guid: bf51d33384664244f9aca0e60aa77968, type: 3}
+  input: 51
+  inputName: 3
