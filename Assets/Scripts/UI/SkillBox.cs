@@ -47,12 +47,13 @@ public class SkillBox : MonoBehaviour
     {
         if (skill.price.Count > currentLevel)
         {
-            if (canBuy == false && AttackerStats.instance.crystals >= skill.price[currentLevel])
+            float crystalsNb = (skill.hasInput) ? AttackerStats.instance.crystals : Defenser.instance.crystals;
+            if (canBuy == false && crystalsNb >= skill.price[currentLevel])
             {
                 canBuy = true;
                 priceText.color = new Color(0, 255, 0);
             }
-            else if (canBuy == true && AttackerStats.instance.crystals < skill.price[currentLevel])
+            else if (canBuy == true && crystalsNb < skill.price[currentLevel])
             {
                 canBuy = false;
                 priceText.color = new Color(255, 0, 0);
@@ -61,9 +62,11 @@ public class SkillBox : MonoBehaviour
     }
     public void UpdateSkillLevel()
     {
-        if (skill.maxLevel > currentLevel && skill.price.Count > currentLevel && AttackerStats.instance.crystals >= skill.price[currentLevel])
+        float crystalsNb = (skill.hasInput) ? AttackerStats.instance.crystals : Defenser.instance.crystals;
+        if (skill.maxLevel > currentLevel && skill.price.Count > currentLevel && crystalsNb >= skill.price[currentLevel])
         {
-            AttackerStats.instance.crystals -= skill.price[currentLevel];
+            AttackerStats.instance.crystals -= (skill.hasInput) ? skill.price[currentLevel] : 0;
+            Defenser.instance.crystals -= (skill.hasInput) ? 0 : skill.price[currentLevel];
             currentLevel += 1;
             skill.currentLevel = currentLevel;
             Transform priceGameObject = transform.GetChild(2);
