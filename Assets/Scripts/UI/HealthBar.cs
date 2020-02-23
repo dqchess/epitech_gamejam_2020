@@ -23,14 +23,20 @@ public class HealthBar : MonoBehaviour
 
     void Update()
     {
-        // transform.position = Camera.main.WorldToScreenPoint(attachedTo.transform.position);
-        transform.position = new Vector3(transform.position.x, transform.position.y + topOffset, transform.position.z);
+        if (attachedTo)
+        {
+            transform.position = Camera.main.WorldToScreenPoint(attachedTo.transform.position);
+            transform.position = new Vector3(transform.position.x, transform.position.y + topOffset, transform.position.z);
+        } else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void SetHealth(float hpMax, float currentHp)
     {
         Slider slider = GetComponent<Slider>();
-        slider.value = (hpMax / currentHp);
+        slider.value = (currentHp / hpMax);
         if (onValueChanged != null)
             onValueChanged.Invoke();
         if (slider.value <= 0 && onDeath != null)

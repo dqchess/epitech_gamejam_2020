@@ -5159,6 +5159,7 @@ GameObject:
   - component: {fileID: 155839947889213967}
   - component: {fileID: 155839947889213966}
   - component: {fileID: 4598800328816066655}
+  - component: {fileID: 4229415684487937582}
   m_Layer: 8
   m_Name: Ship_1
   m_TagString: Player
@@ -5325,6 +5326,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49920a2fb71bb660d958ad69f1f36453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4229415684487937582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155839947889213965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8793d5c1f33d04e9b941e3e40329f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  maxHp: 0
+  regenAmount: 0
 --- !u!1 &156219598133391316
 GameObject:
   m_ObjectHideFlags: 0
@@ -11409,8 +11425,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystals: 0
-  hp: 100
-  maxHp: 100
+  hp: 200
+  maxHp: 200
   damage: 100
   miningValue: 10
 --- !u!114 &3983257039552911924
@@ -11432,6 +11448,7 @@ MonoBehaviour:
   DestroyerChoice: {fileID: 0}
   SniperChoice: {fileID: 0}
   SpeedyChoice: {fileID: 0}
+  playerHealthBar: {fileID: 0}
 --- !u!1 &210113531503390376
 GameObject:
   m_ObjectHideFlags: 0
@@ -12334,6 +12351,7 @@ GameObject:
   - component: {fileID: 210113532149758414}
   - component: {fileID: 2419529333925251814}
   - component: {fileID: 3206766303216123107}
+  - component: {fileID: 1475275169349614221}
   m_Layer: 8
   m_Name: destroyer
   m_TagString: Player
@@ -12504,6 +12522,21 @@ PolygonCollider2D:
       - {x: 0.22, y: -0.57}
       - {x: 0.29999998, y: -0.45}
       - {x: 0.29999998, y: -0.29}
+--- !u!114 &1475275169349614221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210113532149758413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8793d5c1f33d04e9b941e3e40329f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  maxHp: 0
+  regenAmount: 0
 --- !u!1 &210113532341970468
 GameObject:
   m_ObjectHideFlags: 0
@@ -13112,6 +13145,7 @@ GameObject:
   - component: {fileID: 1164411687251152273}
   - component: {fileID: 8463538172388421627}
   - component: {fileID: 6977400268752551773}
+  - component: {fileID: 2599736692773418122}
   m_Layer: 8
   m_Name: Ship_sniper_3
   m_TagString: Player
@@ -13289,6 +13323,21 @@ PolygonCollider2D:
       - {x: 0.37, y: -1.14}
       - {x: 0.53, y: -0.9}
       - {x: 0.53, y: -0.58}
+--- !u!114 &2599736692773418122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734666185737964026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8793d5c1f33d04e9b941e3e40329f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  maxHp: 0
+  regenAmount: 0
 --- !u!1 &981396480578397750
 GameObject:
   m_ObjectHideFlags: 0
@@ -18269,6 +18318,7 @@ GameObject:
   - component: {fileID: 507191020361055913}
   - component: {fileID: 6783101473251541378}
   - component: {fileID: 6972342006731380033}
+  - component: {fileID: 4432143304312564277}
   m_Layer: 8
   m_Name: speedy
   m_TagString: Player
@@ -18435,6 +18485,21 @@ PolygonCollider2D:
       - {x: 0.22, y: -0.57}
       - {x: 0.25, y: -0.47}
       - {x: 0.29999998, y: -0.34}
+--- !u!114 &4432143304312564277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450227368066746386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8793d5c1f33d04e9b941e3e40329f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  maxHp: 0
+  regenAmount: 0
 --- !u!1 &1528172521142767285
 GameObject:
   m_ObjectHideFlags: 0
@@ -23445,6 +23510,7 @@ GameObject:
   - component: {fileID: 5196211237553859879}
   - component: {fileID: 2267921551338265060}
   - component: {fileID: 1545918026227619586}
+  - component: {fileID: 7448482336055084584}
   m_Layer: 8
   m_Name: Ship_speedy_3
   m_TagString: Player
@@ -23626,6 +23692,21 @@ PolygonCollider2D:
       - {x: 0.37, y: -1.14}
       - {x: 0.37, y: -1.06}
       - {x: 0.53, y: -0.9}
+--- !u!114 &7448482336055084584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2552321138495758789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8793d5c1f33d04e9b941e3e40329f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  maxHp: 0
+  regenAmount: 0
 --- !u!1 &2717182459755269617
 GameObject:
   m_ObjectHideFlags: 0
@@ -23809,6 +23890,7 @@ GameObject:
   - component: {fileID: 5004440226793637606}
   - component: {fileID: 861687891984130556}
   - component: {fileID: 7000931559043768825}
+  - component: {fileID: 7034775147419298178}
   m_Layer: 8
   m_Name: Ship_destroyer_3
   m_TagString: Player
@@ -23985,6 +24067,21 @@ PolygonCollider2D:
       - {x: 0.4837159, y: 0.30779037}
       - {x: 0.47940764, y: 0.9790343}
       - {x: 0.17665288, y: 1.2878436}
+--- !u!114 &7034775147419298178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2809633758696132072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8793d5c1f33d04e9b941e3e40329f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  maxHp: 0
+  regenAmount: 0
 --- !u!1 &2821257775356187148
 GameObject:
   m_ObjectHideFlags: 0
@@ -24522,6 +24619,7 @@ GameObject:
   - component: {fileID: 8612409645521490479}
   - component: {fileID: 2999731550748398800}
   - component: {fileID: 7196124632115807943}
+  - component: {fileID: 771402943616332437}
   m_Layer: 8
   m_Name: sniper
   m_TagString: Player
@@ -24708,6 +24806,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49920a2fb71bb660d958ad69f1f36453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &771402943616332437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3831580604792907615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8793d5c1f33d04e9b941e3e40329f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  maxHp: 0
+  regenAmount: 0
 --- !u!1 &3961516976803503615
 GameObject:
   m_ObjectHideFlags: 0
