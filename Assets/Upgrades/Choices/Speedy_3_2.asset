@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Speedy_3_2
   m_EditorClassIdentifier: 
   className: Speedy
-  classImage: {fileID: 21300000, guid: bf51d33384664244f9aca0e60aa77968, type: 3}
+  classImage: {fileID: 21300000, guid: 134f1aafbcbe71543ab2544503370fc0, type: 3}
   input: 51
   inputName: 3

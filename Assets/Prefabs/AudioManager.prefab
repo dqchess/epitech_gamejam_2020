@@ -96,6 +96,6 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: shield-up
     clip: {fileID: 8300000, guid: ddd6073d04e5c7242b9908da9e6f3bd3, type: 3}
-    volume: 1
+    volume: 0.55
     pitch: 1.26
     source: {fileID: 0}
