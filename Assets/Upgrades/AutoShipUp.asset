@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 313e9b461c18c704abbd6c2a299a5c8a, type: 3}
-  m_Name: CastleUp
+  m_Name: AutoShipUp
   m_EditorClassIdentifier: 
-  skillName: CastleUp
-  icon: {fileID: -4841198759364821401, guid: 1314bda8c95e23c409bb8be32c983ed6, type: 3}
-  maxLevel: 5
+  skillName: AutoShipUp
+  icon: {fileID: 3580433868275284445, guid: 1314bda8c95e23c409bb8be32c983ed6, type: 3}
+  maxLevel: 15
   levelThreshold: 5
-  price: 6400000020030000dc050000b80b000088130000
+  price: 64000000c800000090010000f40100002003000084030000e8030000b0040000dc0500000807000098080000c4090000b80b0000800c0000ac0d0000
   hasInput: 0
   input: 0
   inputName: 
-  currentLevel: 5
+  currentLevel: 13

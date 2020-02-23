@@ -24,6 +24,15 @@ public class shipSpawner : MonoBehaviour
             tmp.GetComponent<AIDestinationSetter>().target = player.transform;
         }
     }
+    public void changeAmount(int num)
+    {
+        amount = num;
+    }
+
+    public void changeLevel(int lvl)
+    {
+        level = level;
+    }
 
     // Update is called once per frame
     void Update()
