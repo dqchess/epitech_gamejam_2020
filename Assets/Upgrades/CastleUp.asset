@@ -15,7 +15,9 @@ MonoBehaviour:
   skillName: CastleUp
   icon: {fileID: -8291126335545079962, guid: 1314bda8c95e23c409bb8be32c983ed6, type: 3}
   maxLevel: 5
+  levelThreshold: 5
   price: 
   hasInput: 0
   input: 0
   inputName: 
+  currentLevel: 5

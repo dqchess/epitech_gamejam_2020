@@ -61,7 +61,7 @@ public class GameUI : MonoBehaviour
             if (Input.GetKeyDown(attackBox.skill.input))
                 attackBox.skill.Upgrade();
         }
-        attackCrystalCount.text = AttackerStats.instance.crystals.ToString();
+        attackCrystalCount.text = ((int)(AttackerStats.instance.crystals)).ToString();
     }
 
     public void UpdateSkillLevel(Skill skillUpgraded)
