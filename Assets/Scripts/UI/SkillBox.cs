@@ -89,5 +89,10 @@ public class SkillBox : MonoBehaviour
         {
             transform.GetChild(1).GetChild((currentLevel - 1) % skill.levelThreshold).GetComponent<Image>().color = colors[(int)(((currentLevel - 1) / skill.levelThreshold) + (3 - skill.maxLevel / skill.levelThreshold))];
         }
-    }   
+    }
+
+    public void ResetLevel()
+    {
+        currentLevel = 0;
+    }
 }
