@@ -738,6 +738,7 @@ GameObject:
   - component: {fileID: 7506341393848852215}
   - component: {fileID: 7506341393848852212}
   - component: {fileID: 201444718}
+  - component: {fileID: 4328032879005045661}
   m_Layer: 8
   m_Name: Station
   m_TagString: team2
@@ -865,7 +866,32 @@ MonoBehaviour:
   regenAmount: 0
   onDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4328032879005045661}
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4328032879005045661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7506341393848852208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 733a467569ba8b441b29333e82cfbabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathAnim: {fileID: 6202998154373796254, guid: 98a79c5cf1d6db344aef9b1837426039,
+    type: 3}
 --- !u!1 &7506341394004848004
 GameObject:
   m_ObjectHideFlags: 0
