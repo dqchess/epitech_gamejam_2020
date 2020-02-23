@@ -26,9 +26,9 @@ public class Laser : MonoBehaviour {
 			Debug.Log(col.gameObject.name);
 			Instantiate(hit_effect, transform.position, Quaternion.identity);
 			Destroy(gameObject);
-			if (col.gameObject.GetComponent<DamagableObj>()) {
+			if (col.gameObject.GetComponent<DamageableObj>()) {
 				Debug.Log("faefaefzfzaazf");
-				col.gameObject.GetComponent<DamagableObj>().takeDamage(damage);
+				col.gameObject.GetComponent<DamageableObj>().takeDamage(damage);
 			}
 		}
 	}

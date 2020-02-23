@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Prefabs/Ship.meta
 guid: 40ed4e2039d66b048afd2cbfafdc21dc
+=======
+guid: 2c7d8b1c9dd81c24a846470e496493f1
+>>>>>>> origin/dev:Assets/Prefabs/microShip.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameUI : MonoBehaviour
 {
@@ -26,12 +27,16 @@ public class GameUI : MonoBehaviour
 
     public Transform attackSideParent;
     public Transform defenseSideParent;
+    public Text attackCrystalCount;
 
     [SerializeField]
     List<SkillBox> attackSkillBoxes = new List<SkillBox>();
 
     [SerializeField]
     List<SkillBox> defenseSkillBoxes = new List<SkillBox>();
+
+    [SerializeField]
+    public List<SkillBox> autoTurretBoxes = new List<SkillBox>();
 
     void Start()
     {
@@ -56,6 +61,7 @@ public class GameUI : MonoBehaviour
             if (Input.GetKeyDown(attackBox.skill.input))
                 attackBox.skill.Upgrade();
         }
+        attackCrystalCount.text = ((int)(AttackerStats.instance.crystals)).ToString();
     }
 
     public void UpdateSkillLevel(Skill skillUpgraded)
@@ -76,6 +82,11 @@ public class GameUI : MonoBehaviour
         {
             if (defenseBox.skill == skillSearched)
                 return defenseBox;
+        }
+        foreach (SkillBox autoTurretBox in autoTurretBoxes)
+        {
+            if (autoTurretBox.skill == skillSearched)
+                return autoTurretBox;
         }
         return null;
     }
