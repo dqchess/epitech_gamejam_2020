@@ -26,7 +26,6 @@ public class DamageableObj : MonoBehaviour
             Debug.Log(name + " is dead.");
             if (onDeath != null)
                 onDeath.Invoke();
-            if (gameObject.name != "Station")
                 Destroy(gameObject);
         }
     }
