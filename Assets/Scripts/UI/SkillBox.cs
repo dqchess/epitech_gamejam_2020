@@ -16,6 +16,7 @@ public class SkillBox : MonoBehaviour
     public List<UnityEvent> upgradeEvents = new List<UnityEvent>();
     void Start()
     {
+        skill.currentLevel = 0;
         priceText = transform.GetChild(2).GetChild(0).GetComponent<Text>();
         canBuy = false;
         colors.Add(new Color(0, 0, 255));
@@ -50,10 +51,18 @@ public class SkillBox : MonoBehaviour
             float crystalsNb = (skill.hasInput) ? AttackerStats.instance.crystals : Defenser.instance.crystals;
             if (canBuy == false && crystalsNb >= skill.price[currentLevel])
             {
-                canBuy = true;
-                priceText.color = new Color(0, 255, 0);
+                if (skill.maxLevel != 2 || (skill.currentLevel == 0 && AttackerStats.instance.level >= 6) || (skill.currentLevel == 1 && AttackerStats.instance.level >= 12))
+                {
+                    canBuy = true;
+                    priceText.color = new Color(0, 255, 0);
+                }
             }
             else if (canBuy == true && crystalsNb < skill.price[currentLevel])
+            {
+                canBuy = false;
+                priceText.color = new Color(255, 0, 0);
+            }
+            if (skill.maxLevel == 2 && ((skill.currentLevel == 0 && AttackerStats.instance.level < 6) || (skill.currentLevel == 1 && AttackerStats.instance.level < 12)))
             {
                 canBuy = false;
                 priceText.color = new Color(255, 0, 0);
@@ -68,6 +77,7 @@ public class SkillBox : MonoBehaviour
             AttackerStats.instance.crystals -= (skill.hasInput) ? skill.price[currentLevel] : 0;
             Defenser.instance.crystals -= (skill.hasInput) ? 0 : skill.price[currentLevel];
             currentLevel += 1;
+            AttackerStats.instance.level += 1;
             skill.currentLevel = currentLevel;
             Transform priceGameObject = transform.GetChild(2);
             if (priceGameObject.gameObject.activeSelf)

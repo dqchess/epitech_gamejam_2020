@@ -14,5 +14,6 @@ public class ConstructTriggerZone : MonoBehaviour
     {
         bubble.SetActive(false);
         gameObject.SetActive(false);
+        Debug.Log("Mouse EXIT");
     }
 }

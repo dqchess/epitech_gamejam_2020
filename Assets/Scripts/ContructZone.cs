@@ -9,29 +9,13 @@ public class ContructZone : MonoBehaviour
     bool canBuild;
     public Transform [] zones;
     public List<SkillBox> skillBox = new List<SkillBox>();
+    public Transform healthParent;
+    public GameObject healthBarPrefab;
+
     void Start()
     {
         canBuild = false;
         turret = new GameObject [zones.Length];
-    }
-
-    private void OnMouseEnter()
-    {
-        canBuild = true;
-        Debug.Log("enter");
-
-    }
-
-    private void OnMouseExit()
-    {
-        canBuild = false;
-        Debug.Log("Out");
-    }
-    
-    private void OnMouseDown()
-    {
-        if (Input.GetButtonDown("Fire1"))
-            transform.GetChild(0).gameObject.SetActive(true);
     }
 
     public void createTurret(int num)
@@ -61,6 +45,12 @@ public class ContructZone : MonoBehaviour
         turretToBuild.GetComponent<AutoTurret>().parent = transform.parent.gameObject;
         GameObject tmp = Instantiate(turretToBuild, zones[num].position, transform.rotation, transform);
         tmp.GetComponent<DamageableObj>().onDeath.AddListener(skillBox[num].ResetLevel);
+        GameObject healthBar = Instantiate(healthBarPrefab, healthParent);
+        tmp.GetComponent<DamageableObj>().healthBar = healthBar.GetComponent<HealthBar>();
+        healthBar.GetComponent<HealthBar>().attachedTo = tmp.transform;
+        healthBar.GetComponent<HealthBar>().topOffset = 40;
+        healthBar.GetComponent<RectTransform>().sizeDelta = new Vector2(65, 5);
+        healthBar.gameObject.SetActive(true);
         turret[num] = tmp;
     }
 

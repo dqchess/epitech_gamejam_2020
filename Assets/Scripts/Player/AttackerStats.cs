@@ -33,26 +33,27 @@ public class AttackerStats : MonoBehaviour
     public float rotateSpeedCoeff = 1f;
     public float moveSpeedCoeff = 1f;
     public float shotSpeedCoeff = 1f;
-
- public void increaseMoveSpeedCoeff(float value)
+    public int level = 0;
+    
+    public void increaseMoveSpeedCoeff(float value)
     {
         moveSpeedCoeff += value;
-    }
-
- public void increaseRotateSpeedCoeff(float value)
-    {
-        rotateSpeedCoeff += value;
     }
 
     public void increaseAttackCoeff(float value)
     {
         attackCoeff += value;
     }
-    public void decreaseAttackCoeff(float value)
+
+    public void decreaseAttack(float value)
     {
         attackCoeff -= value;
     }
 
+    public void increaseRotateSpeedCoeff(float value)
+    {
+        rotateSpeedCoeff += value;
+    }
 
     public void increaseMining(float value)
     {

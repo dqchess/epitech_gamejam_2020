@@ -30,6 +30,12 @@ public class GameUI : MonoBehaviour
     public Text attackCrystalCount;
     public Text defenseCrystalCount;
 
+    public GameObject choice1;
+    public GameObject choice2;
+    public GameObject choice3;
+    public GameObject choice4;
+
+
     [SerializeField]
     List<SkillBox> attackSkillBoxes = new List<SkillBox>();
 
@@ -59,8 +65,11 @@ public class GameUI : MonoBehaviour
     {
         foreach (SkillBox attackBox in attackSkillBoxes)
         {
-            if (Input.GetKeyDown(attackBox.skill.input))
-                attackBox.skill.Upgrade();
+            if (Input.GetKeyDown(attackBox.skill.input) && !choice1.activeSelf && !choice2.activeSelf && !choice3.activeSelf && !choice4.activeSelf)
+            {
+                if (attackBox.skill.maxLevel != 2 || ((attackBox.skill.currentLevel == 0 && AttackerStats.instance.level >= 6) || (attackBox.skill.currentLevel == 1 && AttackerStats.instance.level >= 12)))
+                    attackBox.skill.Upgrade();
+            }
         }
         attackCrystalCount.text = ((int)(AttackerStats.instance.crystals)).ToString();
         defenseCrystalCount.text = ((int)(Defenser.instance.crystals)).ToString();
@@ -91,5 +100,10 @@ public class GameUI : MonoBehaviour
                 return autoTurretBox;
         }
         return null;
+    }
+
+    public void ToggleGameObject(GameObject gameObject)
+    {
+        gameObject.SetActive(!gameObject.activeSelf);
     }
 }
